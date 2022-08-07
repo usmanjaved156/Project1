@@ -9,15 +9,20 @@ font-size: 3rem;
 
 
 }
+/* footer main logo */
 .footer-logo  ul{
     text-align: center;
+}
+/* footer social icons 2x */
+.footer-icons{
+    display: flex;
+    justify-content: space-around;
+}
 
+.footer-logo ul li{
+    padding: 0.5rem;
 }
 .container-fluid{
     background-color: rgb(232, 231, 227);
-    padding:3rem;
-}
-.container-fluid ul{
-    /* display: flex; */
-    
+    padding:4rem;
 }

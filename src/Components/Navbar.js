@@ -16,7 +16,7 @@ function ColorSchemesExample() {
   return (
     <>
       <Navbar className="row" style={{ backgroundColor: '#e8e7e3' }}>
-      <div className="col-4" style={{marginLeft:'2%'}}>
+      <div className="col-4 nav-setting" >
  <CallOutlinedIcon/>
  <label style={{paddingRight:'1em'}}>+0123456789</label>
 <EmailOutlinedIcon/>
@@ -39,21 +39,22 @@ function ColorSchemesExample() {
         <Navbar className="row">
        
           <Nav >
-          <div className="col-4" style={{marginLeft:'2%'}}>
+          <div className="col-3 nav-icons" >
             <FacebookIcon />
             <TwitterIcon/>
             <GoogleIcon/>
             <InstagramIcon/>
             <PinterestIcon/>
             </div>
-            <Nav.Link href="#home">Home</Nav.Link>
+            <div className="col-6 nav-links" >
+              <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#shop">Shop</Nav.Link>
             <Nav.Link href="#products">Products</Nav.Link>
             <Nav.Link href="#pages">Pages</Nav.Link>
             <Nav.Link href="#elements">Elements</Nav.Link>
             <Nav.Link href="#sales">Sale</Nav.Link>
-        
-            <div className="col-4" style={{textAlign:'right',marginRight:'2%'}}>
+            </div> 
+            <div className="col-3 nav-search-bar">
             <SearchIcon/>
             </div>
           </Nav>

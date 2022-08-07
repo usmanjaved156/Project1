@@ -1,8 +1,8 @@
 import React from 'react'
-
+import './Sales.css';
 function Sales() {
   return (
-    <div>Sales</div>
+    <div  className="Sales">Sales</div>
   )
 }
 

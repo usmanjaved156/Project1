@@ -4,3 +4,23 @@ Navbar{
     background: #e8e7e3;
    
 } 
+.nav-icons,.nav-links{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+.nav-icons li{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+
+}
+
+.nav-search-bar{
+    text-align: right;
+    padding: 1rem;
+}
+.nav-setting{
+    margin: 1rem;
+}

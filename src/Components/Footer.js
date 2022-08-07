@@ -18,26 +18,26 @@ function Footer() {
         
         <div className='col-3 footer-logo' >
           <h2 className="text-center">claue</h2>
-          <ul >
-          <li><FacebookIcon/>
-            <TwitterIcon/>
-            <GoogleIcon/>
-            <InstagramIcon/>
-            <PinterestIcon/></li>
+          <ul className='footer-icons'>
+          <li><FacebookIcon/></li>
+          <li><TwitterIcon/></li>
+          <li><GoogleIcon/></li>
+          <li> <InstagramIcon/></li>
+          <li> <PinterestIcon/></li>
           </ul>
         </div>
 
         <div className='col-3 ' >
-          <h5>claue</h5>
+          <div className='footer21'><h5>claue</h5>
           <ul>
-          <li><LocationOnIcon/>185 Main Rd E, St Albans<br/>VIC 3021, Australia</li>
-          <li><EmailIcon/>usman@company.com</li>
-          <li><CallIcon/>+000 111 222</li>
-          <li><FacebookIcon/>
-            <TwitterIcon/>
-            <GoogleIcon/>
-            <InstagramIcon/>
-            <PinterestIcon/></li>
+          <li><LocationOnIcon/>   185 Main Rd E, St Albans VIC 3021, Australia</li>
+          <li><EmailIcon/>    usman@company.com</li>
+          <li><CallIcon/>   +000 111 222</li></ul></div>
+         <ul className="footer-icons"> <li><FacebookIcon/></li>
+          <li> <TwitterIcon/></li>
+          <li>  <GoogleIcon/></li>
+          <li> <InstagramIcon/></li>
+          <li> <PinterestIcon/></li>
           </ul>
         </div>
 
