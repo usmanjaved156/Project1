@@ -18,6 +18,6 @@ font-size: 3rem;
     padding:3rem;
 }
 .container-fluid ul{
-    display: flex;
+    /* display: flex; */
     
 }
