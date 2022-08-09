@@ -16,7 +16,7 @@ function ColorSchemesExample() {
   return (
     <>
       <Navbar className="row" style={{ backgroundColor: '#e8e7e3' }}>
-      <div className="col-4" style={{marginLeft:'2%'}}>
+      <div className="col-4" >
  <CallOutlinedIcon/>
  <label style={{paddingRight:'1em'}}>+0123456789</label>
 <EmailOutlinedIcon/>
@@ -25,7 +25,7 @@ function ColorSchemesExample() {
 <div className="col-4">
 <label>Summer Sale discount off 50%! Shop Now</label>
 </div>
-
+<div>
     <NavDropdown title="English">
         <NavDropdown.Item href="#action/3.1">Chinese</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Italy</NavDropdown.Item>
@@ -34,6 +34,7 @@ function ColorSchemesExample() {
     <NavDropdown title="USD-US Dollar">
         <NavDropdown.Item href="#action/3.1">RS-Ruppees</NavDropdown.Item>
             </NavDropdown>
+            </div>
       </Navbar>
       
         <Navbar className="row">

@@ -1,0 +1,78 @@
+.col-3{
+    width: 18rem;
+    border-width: 0;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-3 .btn{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+}
+.col-3 .btn:hover{
+    background-color: rgb(91, 143, 255);
+}
+
+.col-4{
+    width: 18rem;
+    border-width: 0;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.col-4 .btn{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+}
+.col-4 .btn:hover{
+    background-color: rgb(91, 143, 255);
+}
+
+.bottom{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+
+.trending,.products{
+    text-align: center;
+}
+
+.row-product{
+    display: flex;
+    justify-content: center;
+}
+.btn-product{
+    width: 10%;
+    margin: 1%;
+    background-color: transparent;
+    color: black;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.slider-2{
+    width: 20%;
+}
