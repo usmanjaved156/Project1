@@ -6,7 +6,12 @@ import Slider3 from './Assets/slider3.jpg';
 import Img1 from './Assets/img1.jpg';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import '../Components/Home.css'
+import '../Components/Home.css';
+import DirectionsCarOutlinedIcon from '@mui/icons-material/DirectionsCarOutlined';
+import DonutLargeOutlinedIcon from '@mui/icons-material/DonutLargeOutlined';
+import PublishedWithChangesOutlinedIcon from '@mui/icons-material/PublishedWithChangesOutlined';
+import ShieldOutlinedIcon from '@mui/icons-material/ShieldOutlined';
+
 function Home() {
   return (<>
       <div>
@@ -87,7 +92,11 @@ function Home() {
     </Card>
     <Card className='col-3' >
       <Card.Img variant="top" src={Img1} />
-      <Button className='btn'>Watches</Button>
+      <div className='bottom-1'>
+      <h6>SUMMER SALE</h6>
+      <h1>UP TO 70%</h1>
+      <Button  style={{borderRadius:'20px'}}>Shop Now</Button>
+      </div>
     </Card>
     
     </div>
@@ -101,10 +110,8 @@ function Home() {
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Img1}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <Card.Title>Cuffed Beanie</Card.Title>
+        <Card.Text>$115.00
         </Card.Text>
       </Card.Body>
     </Card>
@@ -113,10 +120,8 @@ function Home() {
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Img1}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        <Card.Title>Calvin Klien Logo Sweatpants</Card.Title>
+        <Card.Text>$39.00
         </Card.Text>
       </Card.Body>
     </Card>
@@ -125,10 +130,9 @@ function Home() {
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={Img1}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Cyan Boheme</Card.Title>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+          $125.00
         </Card.Text>
       </Card.Body>
     </Card>
@@ -351,6 +355,39 @@ function Home() {
       </Carousel.Item>
       
     </Carousel>
+    </div>
+    <div className='row'>
+      <div className='col-1'>
+<DirectionsCarOutlinedIcon/>
+      </div>
+      <div className='col-2'>
+<h6>FREE SHIPPING</h6>
+<p>Free shipping on all US order<br/> or order above $200</p>
+</div>
+<div className='col-1'>
+<DonutLargeOutlinedIcon/>
+      </div>
+      <div className='col-2'>
+      <h6>	
+SUPPORT 24/7</h6>
+<p>Contact us 24 hours a day,<br/>7 days a week</p>
+</div>
+<div className='col-1'>
+<PublishedWithChangesOutlinedIcon/>
+      </div>
+      <div className='col-2'>
+      <h6>	
+30 DAYS RETURN</h6>
+<p>Simply return it within 30<br/>days for an exchange</p>
+</div>
+<div className='col-1'>
+<ShieldOutlinedIcon/>
+      </div>
+      <div className='col-2'>
+      <h6>	
+100% PAYMENT SECURE</h6>
+<p>We ensure secure payment<br/>with PEV</p>
+</div>
     </div>
     </>
 

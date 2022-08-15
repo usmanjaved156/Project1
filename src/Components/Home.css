@@ -55,6 +55,12 @@
     left: 20px;
     color: white;
 }
+.bottom-1{
+    position: absolute;
+    bottom: 30%;
+    left: 50px;
+    color: white;
+}
 
 .trending,.products{
     text-align: center;

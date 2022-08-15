@@ -1,6 +1,15 @@
-
-
-Navbar{
-    background: #e8e7e3;
-   
-} 
+.header{
+    background-color: #EADFDD;
+    max-width: 100%;
+    display: flex;
+}
+.icon{
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.label{
+    margin-left: 5%;
+}
+.dropdown{
+       margin-left: 5%;
+}
