@@ -1,9 +1,27 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import Slider1 from './Assets/slider1.jpg';
-import Slider2 from './Assets/slider2.jpg';
-import Slider3 from './Assets/slider3.jpg';
-import Img1 from './Assets/img1.jpg';
+import cover1 from './Assets/cover1.jpg';
+import cover2 from './Assets/cover2.jpg';
+import cover3 from './Assets/cover3.jpg';
+import cap from './Assets/cap.jpg';
+import accessories from './Assets/accessories.jpg';
+import footwear from './Assets/footwear.jpg';
+import watch from './Assets/watch.jpg';
+import model1 from './Assets/model1.jpg';
+import model2 from './Assets/model2.jpg';
+import model3 from './Assets/model3.jpg';
+import trending1 from './Assets/trending1.jpg';
+import trending2 from './Assets/trending2.jpg';
+import trending3 from './Assets/trending3.jpg';
+import trending4 from './Assets/trending4.jpg';
+import product1 from './Assets/product1.jpg';
+import product2 from './Assets/product2.jpg';
+import product3 from './Assets/product3.jpg';
+import product4 from './Assets/product4.jpg';
+import blog1 from './Assets/blog1.jpg';
+import blog2 from './Assets/blog2.jpg';
+import blog3 from './Assets/blog3.jpg';
+
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import '../Components/Home.css';
@@ -19,7 +37,7 @@ function Home() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={Slider1}
+          src={cover1}
           alt="First slide"
         />
         <Carousel.Caption>
@@ -30,7 +48,7 @@ function Home() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={Slider2}
+          src={cover2}
           alt="Second slide"
         />
 
@@ -42,7 +60,7 @@ function Home() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src={Slider3}
+          src={cover3}
           alt="Third slide"
         />
 
@@ -58,28 +76,28 @@ function Home() {
 
     <div className='row'>
     <Card className='col-4' >
-      <Card.Img variant="top" src={Slider1} />
+      <Card.Img variant="top" src={footwear} />
         <Button className='btn'>Watches</Button>
     </Card>
     <Card className='col-4' >
-      <Card.Img variant="top" src={Slider1} />
-        <Button className='btn'>Watches</Button>
-        
-    </Card>
-    <Card className='col-4' >
-      <Card.Img variant="top" src={Slider1} />
+      <Card.Img variant="top" src={accessories} />
         <Button className='btn'>Watches</Button>
         
     </Card>
     <Card className='col-4' >
-      <Card.Img variant="top" src={Slider1} />
+      <Card.Img variant="top" src={watch} />
+        <Button className='btn'>Watches</Button>
+        
+    </Card>
+    <Card className='col-4' >
+      <Card.Img variant="top" src={cap} />
         <Button className='btn'>Watches</Button>
         
     </Card>
     </div>
     <div className='row'>
       <Card className='col-3' >
-      <Card.Img variant="top" src={Img1} />
+      <Card.Img variant="top" src={model1} />
       <div className='bottom'>
       <h6>VIEW COLLECTIONS</h6>
       <h1>LOOKBOOK</h1>
@@ -87,11 +105,11 @@ function Home() {
       </div>
     </Card>
     <Card className='col-3' >
-      <Card.Img variant="top" src={Img1} />
+      <Card.Img variant="top" src={model2} />
         <Button className='btn'>Watches</Button>
     </Card>
     <Card className='col-3' >
-      <Card.Img variant="top" src={Img1} />
+      <Card.Img variant="top" src={model3} />
       <div className='bottom-1'>
       <h6>SUMMER SALE</h6>
       <h1>UP TO 70%</h1>
@@ -106,9 +124,9 @@ function Home() {
     </div>
 
     <div className='row'>
-      <div className='col-4'>
+      <div className='col-3'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={trending1}/>
       <Card.Body>
         <Card.Title>Cuffed Beanie</Card.Title>
         <Card.Text>$115.00
@@ -116,9 +134,9 @@ function Home() {
       </Card.Body>
     </Card>
       </div>
-      <div className='col-4'>
+      <div className='col-3'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={trending2}/>
       <Card.Body>
         <Card.Title>Calvin Klien Logo Sweatpants</Card.Title>
         <Card.Text>$39.00
@@ -126,9 +144,20 @@ function Home() {
       </Card.Body>
     </Card>
       </div>
-      <div className='col-4'>
+      <div className='col-3'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={trending3}/>
+      <Card.Body>
+        <Card.Title>Cyan Boheme</Card.Title>
+        <Card.Text>
+          $125.00
+        </Card.Text>
+      </Card.Body>
+    </Card>
+      </div>
+      <div className='col-3'>
+      <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src={trending4}/>
       <Card.Body>
         <Card.Title>Cyan Boheme</Card.Title>
         <Card.Text>
@@ -152,7 +181,7 @@ function Home() {
     <div className='row'>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={product1}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -164,7 +193,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={product2}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -176,7 +205,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={product3}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -188,7 +217,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={product4}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -202,7 +231,7 @@ function Home() {
     <div className='row'>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={product1}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -214,7 +243,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={product2}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -226,7 +255,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={product3}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -238,7 +267,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={product4}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -257,7 +286,7 @@ function Home() {
     <div className='row'>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={blog1}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -269,7 +298,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={blog2}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -281,7 +310,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={Img1}/>
+      <Card.Img variant="top" src={blog3}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -302,54 +331,54 @@ function Home() {
       <Carousel.Item>
         <img
           className="slider-2"
-          src={Slider1}
+          src={model1}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={Slider2}
+          src={model2}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={Slider3}
+          src={model3}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={Slider1}
+          src={model1}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={Slider2}
+          src={model2}
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Item>
         <img
           className="slider-2"
-          src={Slider1}
+          src={model1}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={Slider2}
+          src={model2}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={Slider3}
+          src={model3}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={Slider1}
+          src={model1}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={Slider2}
+          src={model2}
           alt="First slide"
         />
       </Carousel.Item>
