@@ -1,3 +1,4 @@
+
 .col-3{
     width: 18rem;
     border-width: 0;
@@ -7,9 +8,9 @@
     margin-right: auto;
 }
 
-.col-3 .btn{
+.items .btn{
     position: absolute;
-    top: 70%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -19,9 +20,46 @@
     padding: 12px 24px;
     border: none;
     cursor: pointer;
+    border-radius: 0%;
 }
-.col-3 .btn:hover{
+.items .btn:hover{
     background-color: rgb(91, 143, 255);
+}
+.main-items{
+    display: flex;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 35px;
+}
+.items{
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 284px;
+    width: 315px;
+    border: none;
+    border-radius:0%;
+}
+.btn-items{
+    height: 36px;
+    width: 136px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px;
+}
+.models-div{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    margin-left: 43px;
+    margin-right: 43px;
+}
+.model{
+    height: 494px;
+    width: 370px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
 }
 
 .col-4{
@@ -65,6 +103,19 @@
 .trending,.products{
     text-align: center;
 }
+.trending-div{
+    display: flex;
+    justify-content: center;
+    margin-left: 43px;
+    margin-right: 43px;
+}
+.trending-items{
+    border: none;
+    height: 474px;
+    width: 263px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 .row-product{
     display: flex;
@@ -81,4 +132,8 @@
 
 .slider-2{
     width: 20%;
+}
+.slider-2{
+    height: 212px;
+    width: 212px;
 }

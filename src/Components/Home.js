@@ -18,9 +18,20 @@ import product1 from './Assets/product1.jpg';
 import product2 from './Assets/product2.jpg';
 import product3 from './Assets/product3.jpg';
 import product4 from './Assets/product4.jpg';
+import product5 from './Assets/product5.jpg';
+import product6 from './Assets/product6.jpg';
+import product7 from './Assets/product7.jpg';
+import product8 from './Assets/product8.jpg';
 import blog1 from './Assets/blog1.jpg';
 import blog2 from './Assets/blog2.jpg';
 import blog3 from './Assets/blog3.jpg';
+import social1 from './Assets/social1.jpg';
+import social2 from './Assets/social2.jpg';
+import social3 from './Assets/social3.jpg';
+import social4 from './Assets/social4.jpg';
+import social5 from './Assets/social5.jpg';
+import social6 from './Assets/social6.jpg';
+
 
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -33,8 +44,8 @@ import ShieldOutlinedIcon from '@mui/icons-material/ShieldOutlined';
 function Home() {
   return (<>
       <div>
-       <Carousel>
-      <Carousel.Item>
+       <Carousel className="slider">
+      <Carousel.Item >
         <img
           className="d-block w-100"
           src={cover1}
@@ -74,29 +85,31 @@ function Home() {
     </Carousel>
     </div>
 
-    <div className='row'>
-    <Card className='col-4' >
+    <div className='main-items'>
+    <Card className='items' >
       <Card.Img variant="top" src={footwear} />
-        <Button className='btn'>Watches</Button>
+        <Button className='btn-items'>Watches</Button>
     </Card>
-    <Card className='col-4' >
+    <Card className='items' >
       <Card.Img variant="top" src={accessories} />
-        <Button className='btn'>Watches</Button>
+        <Button className='btn-items'>Watches</Button>
         
     </Card>
-    <Card className='col-4' >
+    <Card className='items' >
       <Card.Img variant="top" src={watch} />
-        <Button className='btn'>Watches</Button>
+        <Button className='btn-items'>Watches</Button>
         
     </Card>
-    <Card className='col-4' >
+    <Card className='items' >
       <Card.Img variant="top" src={cap} />
-        <Button className='btn'>Watches</Button>
+        <Button className='btn-items'>Watches</Button>
         
     </Card>
     </div>
-    <div className='row'>
-      <Card className='col-3' >
+
+{/* Models */}
+    <div className='models-div'>
+      <Card className='model' >
       <Card.Img variant="top" src={model1} />
       <div className='bottom'>
       <h6>VIEW COLLECTIONS</h6>
@@ -104,11 +117,10 @@ function Home() {
       <p>your world of fashion in numbers</p>
       </div>
     </Card>
-    <Card className='col-3' >
+    <Card className='model' >
       <Card.Img variant="top" src={model2} />
-        <Button className='btn'>Watches</Button>
     </Card>
-    <Card className='col-3' >
+    <Card className='model' >
       <Card.Img variant="top" src={model3} />
       <div className='bottom-1'>
       <h6>SUMMER SALE</h6>
@@ -123,9 +135,9 @@ function Home() {
       <p><i>Top view in this week</i></p>
     </div>
 
-    <div className='row'>
-      <div className='col-3'>
-      <Card style={{ width: '18rem' }}>
+    <div className='trending-div'>
+      <div >
+      <Card className='trending-items'>
       <Card.Img variant="top" src={trending1}/>
       <Card.Body>
         <Card.Title>Cuffed Beanie</Card.Title>
@@ -134,8 +146,8 @@ function Home() {
       </Card.Body>
     </Card>
       </div>
-      <div className='col-3'>
-      <Card style={{ width: '18rem' }}>
+      <div >
+      <Card className='trending-items'>
       <Card.Img variant="top" src={trending2}/>
       <Card.Body>
         <Card.Title>Calvin Klien Logo Sweatpants</Card.Title>
@@ -144,8 +156,8 @@ function Home() {
       </Card.Body>
     </Card>
       </div>
-      <div className='col-3'>
-      <Card style={{ width: '18rem' }}>
+      <div >
+      <Card className='trending-items'>
       <Card.Img variant="top" src={trending3}/>
       <Card.Body>
         <Card.Title>Cyan Boheme</Card.Title>
@@ -155,8 +167,8 @@ function Home() {
       </Card.Body>
     </Card>
       </div>
-      <div className='col-3'>
-      <Card style={{ width: '18rem' }}>
+      <div >
+      <Card className='trending-items'>
       <Card.Img variant="top" src={trending4}/>
       <Card.Body>
         <Card.Title>Cyan Boheme</Card.Title>
@@ -180,7 +192,7 @@ function Home() {
     </div>
     <div className='row'>
       <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+      <Card >
       <Card.Img variant="top" src={product1}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
@@ -231,7 +243,7 @@ function Home() {
     <div className='row'>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={product1}/>
+      <Card.Img variant="top" src={product5}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -243,7 +255,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={product2}/>
+      <Card.Img variant="top" src={product6}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -255,7 +267,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={product3}/>
+      <Card.Img variant="top" src={product7}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -267,7 +279,7 @@ function Home() {
       </div>
       <div className='col-4'>
       <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={product4}/>
+      <Card.Img variant="top" src={product8}/>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
@@ -327,61 +339,40 @@ function Home() {
     <div>
 
 
-       <Carousel>
+       <Carousel className='social-items'>
       <Carousel.Item>
         <img
           className="slider-2"
-          src={model1}
+          src={social1}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={model2}
+          src={social2}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={model3}
+          src={social3}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={model1}
+          src={social4}
           alt="First slide"
         />
         <img
           className="slider-2"
-          src={model2}
+          src={social5}
+          alt="First slide"
+        />
+        <img
+          className="slider-2"
+          src={social6}
           alt="First slide"
         />
       </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="slider-2"
-          src={model1}
-          alt="First slide"
-        />
-        <img
-          className="slider-2"
-          src={model2}
-          alt="First slide"
-        />
-        <img
-          className="slider-2"
-          src={model3}
-          alt="First slide"
-        />
-        <img
-          className="slider-2"
-          src={model1}
-          alt="First slide"
-        />
-        <img
-          className="slider-2"
-          src={model2}
-          alt="First slide"
-        />
-      </Carousel.Item>
+      
       
     </Carousel>
     </div>
