@@ -23,7 +23,7 @@
     border-radius: 0%;
 }
 .items .btn:hover{
-    background-color: rgb(91, 143, 255);
+    background-color: rgb(3, 201, 215);
 }
 .main-items{
     display: flex;
@@ -41,11 +41,10 @@
     border-radius:0%;
 }
 .btn-items{
-    height: 36px;
-    width: 136px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 2px;
+    height: 50px;
+    width: 150px;
+    font-family: 'Poppins';
+    font-weight: 600;
 }
 .models-div{
     display: flex;
@@ -89,19 +88,51 @@
 
 .bottom{
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 40px;
+    left: 30px;
     color: white;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue';
+}
+.bottom h6{
+    color: black;
+    font-weight: 600;
+}
+.bottom h1{
+    color: black;
+    font-weight: 600;
+}
+.bottom p{
+    color: black;
 }
 .bottom-1{
     position: absolute;
-    bottom: 30%;
-    left: 50px;
+    bottom: 40%;
+    left: 90px;
     color: white;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue';
+}
+.bottom-1 h6{
+    font-weight: 600;
+
+    color: black;
+}
+.bottom-1 h1{
+    font-weight: 600;
+    color: black;
+}
+.btn-bottom-1{
+    font-weight: 600;
+    color: black;
+    width: 130px;
+    border-radius: 20px;
+    background-color: transparent;
+    border-width: 2px;
+    border-color: black;
 }
 
-.trending,.products{
+.heading{
     text-align: center;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue';
 }
 .trending-div{
     display: flex;
@@ -136,4 +167,10 @@
 .slider-2{
     height: 212px;
     width: 212px;
+}
+.about-div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }

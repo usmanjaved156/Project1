@@ -51,9 +51,10 @@ function Home() {
           src={cover1}
           alt="First slide"
         />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <Carousel.Caption style={{color:'black'}}>
+          <h5>Spring - Summer 2020</h5>
+          <h2>FLASH SALE OF 70%</h2>
+          <p>Lorem</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -88,11 +89,11 @@ function Home() {
     <div className='main-items'>
     <Card className='items' >
       <Card.Img variant="top" src={footwear} />
-        <Button className='btn-items'>Watches</Button>
+        <Button className='btn-items'>Footwear</Button>
     </Card>
     <Card className='items' >
       <Card.Img variant="top" src={accessories} />
-        <Button className='btn-items'>Watches</Button>
+        <Button className='btn-items'>Accessories</Button>
         
     </Card>
     <Card className='items' >
@@ -102,7 +103,7 @@ function Home() {
     </Card>
     <Card className='items' >
       <Card.Img variant="top" src={cap} />
-        <Button className='btn-items'>Watches</Button>
+        <Button className='btn-items'>Caps & Hats</Button>
         
     </Card>
     </div>
@@ -125,13 +126,13 @@ function Home() {
       <div className='bottom-1'>
       <h6>SUMMER SALE</h6>
       <h1>UP TO 70%</h1>
-      <Button  style={{borderRadius:'20px'}}>Shop Now</Button>
+      <Button className='btn-bottom-1'>Shop Now</Button>
       </div>
     </Card>
     
     </div>
-    <div className='trending'>
-      <h1>--TRENDING--</h1>
+    <div className='heading'>
+      <h1>TRENDING</h1>
       <p><i>Top view in this week</i></p>
     </div>
 
@@ -179,8 +180,8 @@ function Home() {
     </Card>
       </div>
     </div>
-    <div className='products'>
-      <h1>--OUR PRODUCTS--</h1>
+    <div className='heading'>
+      <h1>OUR PRODUCTS</h1>
       <p><i>Top view in the week</i></p>
     </div>
 
@@ -290,8 +291,8 @@ function Home() {
     </Card>
       </div>
     </div>
-    <div className='trending'>
-      <h1>--LATEST FROM BLOGS--</h1>
+    <div className='heading'>
+      <h1>LATEST FROM BLOGS</h1>
       <p><i>The freshest and most exciting news</i></p>
     </div>
 
@@ -333,14 +334,10 @@ function Home() {
     </Card>
       </div>
     </div>
-    <div className='trending'>
-      <h1>--@ FOLLOW US ON INSTAGRAM--</h1>
+    <div className='heading'>
+      <h1>@ FOLLOW US ON INSTAGRAM</h1>
     </div>
-    <div>
-
-
-       <Carousel className='social-items'>
-      <Carousel.Item>
+       <div className='social-items'>
         <img
           className="slider-2"
           src={social1}
@@ -371,39 +368,29 @@ function Home() {
           src={social6}
           alt="First slide"
         />
-      </Carousel.Item>
-      
-      
-    </Carousel>
+
     </div>
-    <div className='row'>
-      <div className='col-1'>
-<DirectionsCarOutlinedIcon/>
-      </div>
-      <div className='col-2'>
+
+    <div className='about-div'>
+    <DirectionsCarOutlinedIcon/>
+    <div className='col-2'>
 <h6>FREE SHIPPING</h6>
 <p>Free shipping on all US order<br/> or order above $200</p>
 </div>
-<div className='col-1'>
 <DonutLargeOutlinedIcon/>
-      </div>
-      <div className='col-2'>
+<div className='col-2'>
       <h6>	
 SUPPORT 24/7</h6>
 <p>Contact us 24 hours a day,<br/>7 days a week</p>
 </div>
-<div className='col-1'>
 <PublishedWithChangesOutlinedIcon/>
-      </div>
-      <div className='col-2'>
+<div className='col-2'>
       <h6>	
 30 DAYS RETURN</h6>
 <p>Simply return it within 30<br/>days for an exchange</p>
 </div>
-<div className='col-1'>
 <ShieldOutlinedIcon/>
-      </div>
-      <div className='col-2'>
+<div className='col-2'>
       <h6>	
 100% PAYMENT SECURE</h6>
 <p>We ensure secure payment<br/>with PEV</p>
