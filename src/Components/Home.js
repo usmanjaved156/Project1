@@ -141,9 +141,12 @@ function Home() {
       <Card className='trending-items'>
       <Card.Img variant="top" src={trending1}/>
       <Card.Body>
-        <Card.Title>Cuffed Beanie</Card.Title>
-        <Card.Text>$115.00
-        </Card.Text>
+        <h6>Cuffed Beanie</h6>
+        <p>$115.00
+        </p>
+        <Button className='btn-trending'>L</Button>
+        <Button className='btn-trending'>M</Button>
+        <Button className='btn-trending'>XS</Button>
       </Card.Body>
     </Card>
       </div>
@@ -151,9 +154,9 @@ function Home() {
       <Card className='trending-items'>
       <Card.Img variant="top" src={trending2}/>
       <Card.Body>
-        <Card.Title>Calvin Klien Logo Sweatpants</Card.Title>
-        <Card.Text>$39.00
-        </Card.Text>
+        <h6>Calvin Klien Logo Sweatpants</h6>
+        <p>$39.00
+        </p>
       </Card.Body>
     </Card>
       </div>
@@ -161,10 +164,10 @@ function Home() {
       <Card className='trending-items'>
       <Card.Img variant="top" src={trending3}/>
       <Card.Body>
-        <Card.Title>Cyan Boheme</Card.Title>
-        <Card.Text>
+        <h6>Cyan Boheme</h6>
+        <p>
           $125.00
-        </Card.Text>
+        </p>
       </Card.Body>
     </Card>
       </div>
@@ -172,10 +175,10 @@ function Home() {
       <Card className='trending-items'>
       <Card.Img variant="top" src={trending4}/>
       <Card.Body>
-        <Card.Title>Cyan Boheme</Card.Title>
-        <Card.Text>
+        <h6>Cyan Boheme</h6>
+        <p>
           $125.00
-        </Card.Text>
+        </p>
       </Card.Body>
     </Card>
       </div>
@@ -186,153 +189,117 @@ function Home() {
     </div>
 
     <div className='row-product'>
-    <Button className='btn-product'>Primary</Button>
-    <Button className='btn-product'>Primary</Button>
-    <Button className='btn-product'>Primary</Button>
-    <Button className='btn-product'>Primary</Button>
+    <Button className='btn-product'>Best Seller</Button>
+    <Button className='btn-product'>New</Button>
+    <Button className='btn-product'>Sale</Button>
+    <Button className='btn-product'>Top Rate</Button>
     </div>
-    <div className='row'>
-      <div className='col-4'>
-      <Card >
+      <div className='product-div1'>
+      <Card className='product'>
       <Card.Img variant="top" src={product1}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <h6>Jean Super Man</h6>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        $33.00
         </Card.Text>
       </Card.Body>
     </Card>
-      </div>
-      <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+      <Card className='product'>
       <Card.Img variant="top" src={product2}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <h6>Jean Hot fire brown</h6>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        $49.00
         </Card.Text>
       </Card.Body>
     </Card>
-      </div>
-      <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+      <Card className='product'>
       <Card.Img variant="top" src={product3}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <h6>Jean Lion king black</h6>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        $65.00
         </Card.Text>
       </Card.Body>
     </Card>
-      </div>
-      <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+      <Card className='product'>
       <Card.Img variant="top" src={product4}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <h6>Jean Raw Denim Black</h6>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        $92.00
         </Card.Text>
       </Card.Body>
     </Card>
-      </div>
     </div>
-    <div className='row'>
-      <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+    <div className='product-div2'>
+      <Card className='product'>
       <Card.Img variant="top" src={product5}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <h6>Denim Shell Top with Ruffle Front</h6>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        $58.00
         </Card.Text>
       </Card.Body>
     </Card>
-      </div>
-      <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+      <Card className='product'>
       <Card.Img variant="top" src={product6}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <h6>Jean Roshe One Casual</h6>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        $115.00
         </Card.Text>
       </Card.Body>
     </Card>
-      </div>
-      <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+      <Card className='product'>
       <Card.Img variant="top" src={product7}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <h6>ASOS Ridley High Waist</h6>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        $49.00
         </Card.Text>
       </Card.Body>
     </Card>
-      </div>
-      <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+      <Card className='product'>
       <Card.Img variant="top" src={product8}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <h6>Analogue Resin Strap Watch</h6>
         <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+        $56.00
         </Card.Text>
       </Card.Body>
     </Card>
-      </div>
     </div>
+
+
     <div className='heading'>
       <h1>LATEST FROM BLOGS</h1>
       <p><i>The freshest and most exciting news</i></p>
     </div>
 
-    <div className='row'>
-      <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+    
+      <div className='blog-div'>
+      <Card className='blog'>
       <Card.Img variant="top" src={blog1}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
+        <h6>Blog 1</h6>
+        
       </Card.Body>
     </Card>
-      </div>
-      <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+      <Card className='blog'>
       <Card.Img variant="top" src={blog2}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
+        <h6>Blog 2</h6>
+        
       </Card.Body>
     </Card>
-      </div>
-      <div className='col-4'>
-      <Card style={{ width: '18rem' }}>
+      <Card className='blog'>
       <Card.Img variant="top" src={blog3}/>
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        </Card.Text>
+        <h6>Blog 3</h6>
+        
       </Card.Body>
     </Card>
-      </div>
     </div>
     <div className='heading'>
       <h1>@ FOLLOW US ON INSTAGRAM</h1>
