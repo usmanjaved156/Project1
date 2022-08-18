@@ -31,8 +31,6 @@ import social3 from './Assets/social3.jpg';
 import social4 from './Assets/social4.jpg';
 import social5 from './Assets/social5.jpg';
 import social6 from './Assets/social6.jpg';
-
-
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import '../Components/Home.css';
@@ -88,21 +86,21 @@ function Home() {
 
     <div className='main-items'>
     <Card className='items' >
-      <Card.Img variant="top" src={footwear} />
+      <Card.Img className='img-items' src={footwear} />
         <Button className='btn-items'>Footwear</Button>
     </Card>
     <Card className='items' >
-      <Card.Img variant="top" src={accessories} />
+      <Card.Img className='img-items' src={accessories} />
         <Button className='btn-items'>Accessories</Button>
         
     </Card>
     <Card className='items' >
-      <Card.Img variant="top" src={watch} />
+      <Card.Img className='img-items' src={watch} />
         <Button className='btn-items'>Watches</Button>
         
     </Card>
     <Card className='items' >
-      <Card.Img variant="top" src={cap} />
+      <Card.Img className='img-items' src={cap} />
         <Button className='btn-items'>Caps & Hats</Button>
         
     </Card>
@@ -111,7 +109,7 @@ function Home() {
 {/* Models */}
     <div className='models-div'>
       <Card className='model' >
-      <Card.Img variant="top" src={model1} />
+      <Card.Img className='img-model' src={model1} />
       <div className='bottom'>
       <h6>VIEW COLLECTIONS</h6>
       <h1>LOOKBOOK</h1>
@@ -119,10 +117,10 @@ function Home() {
       </div>
     </Card>
     <Card className='model' >
-      <Card.Img variant="top" src={model2} />
+      <Card.Img className='img-model' src={model2} />
     </Card>
     <Card className='model' >
-      <Card.Img variant="top" src={model3} />
+      <Card.Img className='img-model' src={model3} />
       <div className='bottom-1'>
       <h6>SUMMER SALE</h6>
       <h1>UP TO 70%</h1>
@@ -139,7 +137,7 @@ function Home() {
     <div className='trending-div'>
       <div >
       <Card className='trending-items'>
-      <Card.Img variant="top" src={trending1}/>
+      <Card.Img className='img-trending-items' src={trending1}/>
       <Card.Body>
         <h6>Cuffed Beanie</h6>
         <p>$115.00
@@ -152,7 +150,7 @@ function Home() {
       </div>
       <div >
       <Card className='trending-items'>
-      <Card.Img variant="top" src={trending2}/>
+      <Card.Img className='img-trending-items' src={trending2}/>
       <Card.Body>
         <h6>Calvin Klien Logo Sweatpants</h6>
         <p>$39.00
@@ -162,7 +160,7 @@ function Home() {
       </div>
       <div >
       <Card className='trending-items'>
-      <Card.Img variant="top" src={trending3}/>
+      <Card.Img className='img-trending-items' src={trending3}/>
       <Card.Body>
         <h6>Cyan Boheme</h6>
         <p>
@@ -173,7 +171,7 @@ function Home() {
       </div>
       <div >
       <Card className='trending-items'>
-      <Card.Img variant="top" src={trending4}/>
+      <Card.Img className='img-trending-items' src={trending4}/>
       <Card.Body>
         <h6>Cyan Boheme</h6>
         <p>
@@ -196,7 +194,7 @@ function Home() {
     </div>
       <div className='product-div1'>
       <Card className='product'>
-      <Card.Img variant="top" src={product1}/>
+      <Card.Img className='img-product' src={product1}/>
       <Card.Body>
         <h6>Jean Super Man</h6>
         <Card.Text>
@@ -205,7 +203,7 @@ function Home() {
       </Card.Body>
     </Card>
       <Card className='product'>
-      <Card.Img variant="top" src={product2}/>
+      <Card.Img className='img-product' src={product2}/>
       <Card.Body>
         <h6>Jean Hot fire brown</h6>
         <Card.Text>
@@ -214,7 +212,7 @@ function Home() {
       </Card.Body>
     </Card>
       <Card className='product'>
-      <Card.Img variant="top" src={product3}/>
+      <Card.Img className='img-product' src={product3}/>
       <Card.Body>
         <h6>Jean Lion king black</h6>
         <Card.Text>
@@ -223,7 +221,7 @@ function Home() {
       </Card.Body>
     </Card>
       <Card className='product'>
-      <Card.Img variant="top" src={product4}/>
+      <Card.Img className='img-product' src={product4}/>
       <Card.Body>
         <h6>Jean Raw Denim Black</h6>
         <Card.Text>
@@ -234,7 +232,7 @@ function Home() {
     </div>
     <div className='product-div2'>
       <Card className='product'>
-      <Card.Img variant="top" src={product5}/>
+      <Card.Img className='img-product' src={product5}/>
       <Card.Body>
         <h6>Denim Shell Top with Ruffle Front</h6>
         <Card.Text>
@@ -243,7 +241,7 @@ function Home() {
       </Card.Body>
     </Card>
       <Card className='product'>
-      <Card.Img variant="top" src={product6}/>
+      <Card.Img className='img-product' src={product6}/>
       <Card.Body>
         <h6>Jean Roshe One Casual</h6>
         <Card.Text>
@@ -252,7 +250,7 @@ function Home() {
       </Card.Body>
     </Card>
       <Card className='product'>
-      <Card.Img variant="top" src={product7}/>
+      <Card.Img className='img-product' src={product7}/>
       <Card.Body>
         <h6>ASOS Ridley High Waist</h6>
         <Card.Text>
@@ -261,7 +259,7 @@ function Home() {
       </Card.Body>
     </Card>
       <Card className='product'>
-      <Card.Img variant="top" src={product8}/>
+      <Card.Img className='img-product' src={product8}/>
       <Card.Body>
         <h6>Analogue Resin Strap Watch</h6>
         <Card.Text>
@@ -280,21 +278,21 @@ function Home() {
     
       <div className='blog-div'>
       <Card className='blog'>
-      <Card.Img variant="top" src={blog1}/>
+      <Card.Img className='img-blog' src={blog1}/>
       <Card.Body>
         <h6>Blog 1</h6>
         
       </Card.Body>
     </Card>
       <Card className='blog'>
-      <Card.Img variant="top" src={blog2}/>
+      <Card.Img className='img-blog' src={blog2}/>
       <Card.Body>
         <h6>Blog 2</h6>
         
       </Card.Body>
     </Card>
       <Card className='blog'>
-      <Card.Img variant="top" src={blog3}/>
+      <Card.Img className='img-blog' src={blog3}/>
       <Card.Body>
         <h6>Blog 3</h6>
         
@@ -306,32 +304,32 @@ function Home() {
     </div>
        <div className='social-items'>
         <img
-          className="slider-2"
+          className="img-social-items"
           src={social1}
           alt="First slide"
         />
         <img
-          className="slider-2"
+          className="img-social-items"
           src={social2}
           alt="First slide"
         />
         <img
-          className="slider-2"
+          className="img-social-items"
           src={social3}
           alt="First slide"
         />
         <img
-          className="slider-2"
+          className="img-social-items"
           src={social4}
           alt="First slide"
         />
         <img
-          className="slider-2"
+          className="img-social-items"
           src={social5}
           alt="First slide"
         />
         <img
-          className="slider-2"
+          className="img-social-items"
           src={social6}
           alt="First slide"
         />

@@ -20,26 +20,24 @@ function Header() {
   return (
     <>
     {/* Header Starts*/}
-    <Container className="header">
-    <CallOutlinedIcon className='icon'/>+0123456789
-    <EmailOutlinedIcon className='icon'/>claue@domain.com
-
+    <div className="header">
+      <div className='header-1'>
+    <CallOutlinedIcon />
+    <label className='lbl-header-1'>+0123456789</label>
+    <EmailOutlinedIcon />
+    <label className='lbl-header-1'>claue@domain.com</label>
+    </div>
+    <div className='header-2'>
 <label className='label'>Summer Sale discount off 50%! Shop Now</label>
-<NavDropdown className="dropdown" title="English">
-        <NavDropdown.Item href="#action/3.1">Chinese</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Italy</NavDropdown.Item>
-    </NavDropdown>
-    <NavDropdown Ntitle="USD-US Dollar">
-        <NavDropdown.Item href="#action/3.1">RS-Ruppees</NavDropdown.Item>
-            </NavDropdown>
-      </Container>
+</div>
+      </div>
       {/* Header Ends*/}
       
       {/* Navbar Starts */}
     <Navbar>
-      <Container>
-      <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
+      <div className='navbar'>
+      <Navbar.Collapse>
+      <Nav className='nav-icons-1'>
         
       <Nav.Link href="#home"><FacebookIcon/></Nav.Link>
             <Nav.Link href="#home"><TwitterIcon/></Nav.Link>
@@ -48,8 +46,8 @@ function Header() {
             <Nav.Link href="#home"><PinterestIcon/></Nav.Link>
         </Nav>
       </Navbar.Collapse>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Collapse >
+          <Nav className='nav-pages'>
             <Nav.Link href="/Home">Home</Nav.Link>
             <Nav.Link href="/Shop">Shop</Nav.Link>
             <Nav.Link href="/Products">Products</Nav.Link>
@@ -58,15 +56,15 @@ function Header() {
             <Nav.Link href="/Sales">Sales</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="me-auto">
+        <Navbar.Collapse >
+      <Nav className='nav-icons-2'>
             <Nav.Link href="#home"><SearchIcon/></Nav.Link>
             <Nav.Link href="#home"><AccountCircleOutlinedIcon/></Nav.Link>
             <Nav.Link href="#home"><FavoriteBorderOutlinedIcon/></Nav.Link>
             <Nav.Link href="#home"><AddShoppingCartOutlinedIcon/></Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      </Container>
+      </div >
     </Navbar>
       {/* Navbar Ends */}
     </>
