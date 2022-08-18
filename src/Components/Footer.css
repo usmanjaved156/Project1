@@ -1,18 +1,33 @@
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #f6f6f8;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+.icons-footer-1{
+    padding-left: 0;
+}
+.icon{
+    padding-right: 8px;
+    box-sizing: none;
+}
 ul{
-    padding: 0;
-    list-style: none; 
+    
+    list-style: none;
 }
-.footer-logo h2{
-padding: 2rem;
-font-size: 3rem;
-
-
+li{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue';
+    font-size: 14px;
+    color: #878787;
 }
-.footer-logo  ul{
-    text-align: center;
-
+b{
+    color: black;
+    font-size: 16px;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue';
 }
-.container-fluid{
-    background-color: rgb(232, 231, 227);
-    padding:3rem;
+img{
+    padding-bottom: 10px;
 }
