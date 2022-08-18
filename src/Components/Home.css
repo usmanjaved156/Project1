@@ -1,4 +1,11 @@
 
+.btn-slider-1{
+    width: 120px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
 .items .btn{
     position: absolute;
     top: 85%;

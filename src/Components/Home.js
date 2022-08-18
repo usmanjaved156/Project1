@@ -43,7 +43,7 @@ function Home() {
   return (<>
       <div>
        <Carousel className="slider">
-      <Carousel.Item >
+      <Carousel.Item className='item-slider-1'>
         <img
           className="d-block w-100"
           src={cover1}
@@ -52,7 +52,7 @@ function Home() {
         <Carousel.Caption style={{color:'black'}}>
           <h5>Spring - Summer 2020</h5>
           <h2>FLASH SALE OF 70%</h2>
-          <p>Lorem</p>
+          <Button className='btn-slider-1'>Shop now</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -62,9 +62,10 @@ function Home() {
           alt="Second slide"
         />
 
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<Carousel.Caption style={{color:'black'}}>
+          <h5>Spring - Summer 2020</h5>
+          <h2>FLASH SALE OF 70%</h2>
+          <Button className='btn-slider-1'>Shop now</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -74,11 +75,10 @@ function Home() {
           alt="Third slide"
         />
 
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+<Carousel.Caption style={{color:'black'}}>
+          <h5>Spring - Summer 2020</h5>
+          <h2>FLASH SALE OF 70%</h2>
+          <Button className='btn-slider-1'>Shop now</Button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
