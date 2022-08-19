@@ -1,12 +1,9 @@
-import {Link} from 'react-router-dom';
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import SearchIcon from '@mui/icons-material/Search';
-import './Navbar.css'
+import './Navbar.css';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GoogleIcon from '@mui/icons-material/Google';
@@ -28,7 +25,7 @@ function Header() {
     <label className='lbl-header-1'>claue@domain.com</label>
     </div>
     <div className='header-2'>
-<label className='label'>Summer Sale discount off 50%! Shop Now</label>
+<label className='label'>Summer Sale discount off <span style={{color:'red'}}>50%!</span> Shop Now</label>
 </div>
       </div>
       {/* Header Ends*/}
