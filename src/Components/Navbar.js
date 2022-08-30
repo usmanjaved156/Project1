@@ -1,3 +1,6 @@
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
@@ -17,15 +20,30 @@ function Header() {
   return (
     <>
     {/* Header Starts*/}
+
+    <Container>
+      <Row>
+        <Col>
+        <CallOutlinedIcon />
+    <label className='lbl-header-1'>+0123456789</label>
+        </Col>
+        <Col>
+        <EmailOutlinedIcon />
+    <label className='lbl-header-1'>claue@domain.com</label>
+        </Col>
+        <Col>
+<label className='label'>Summer Sale discount off <span style={{color:'red'}}>50%!</span> Shop Now</label>
+
+        </Col>
+      </Row>
+    </Container>
+
     <div className="header">
       <div className='header-1'>
-    <CallOutlinedIcon />
-    <label className='lbl-header-1'>+0123456789</label>
-    <EmailOutlinedIcon />
-    <label className='lbl-header-1'>claue@domain.com</label>
+    
+
     </div>
     <div className='header-2'>
-<label className='label'>Summer Sale discount off <span style={{color:'red'}}>50%!</span> Shop Now</label>
 </div>
       </div>
       {/* Header Ends*/}
