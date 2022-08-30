@@ -20,32 +20,24 @@ function Header() {
   return (
     <>
     {/* Header Starts*/}
+   
 
-    <Container>
+    <Container className="header">
       <Row>
-        <Col>
+        <Col sm={4}>
         <CallOutlinedIcon />
     <label className='lbl-header-1'>+0123456789</label>
-        </Col>
-        <Col>
+        
         <EmailOutlinedIcon />
     <label className='lbl-header-1'>claue@domain.com</label>
-        </Col>
-        <Col>
-<label className='label'>Summer Sale discount off <span style={{color:'red'}}>50%!</span> Shop Now</label>
+    </Col>
+        <Col sm={8}>
+<label className='label'>Summer Sale discount off <span style={{color:'red'}}>50%</span> Shop Now</label>
 
         </Col>
+        
       </Row>
     </Container>
-
-    <div className="header">
-      <div className='header-1'>
-    
-
-    </div>
-    <div className='header-2'>
-</div>
-      </div>
       {/* Header Ends*/}
       
       {/* Navbar Starts */}
