@@ -1,4 +1,3 @@
-
 .btn-slider-1{
     width: 120px;
     border-radius: 20px;
@@ -23,13 +22,7 @@
 .items .btn:hover{
     background-color: rgb(3, 201, 215);
 }
-.main-items{
-    display: flex;
-    justify-content: center;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 35px;
-}
+
 .items{
     padding-left: 15px;
     padding-right: 15px;
@@ -61,11 +54,7 @@ transform:scale(1.2);
     font-weight: 600;
 }
 .models-div{
-    display: flex;
-    justify-content: center;
     padding-top: 80px;
-    margin-left: 43px;
-    margin-right: 43px;
 }
 .model{
     height: 494px;

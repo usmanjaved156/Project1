@@ -1,4 +1,5 @@
 import React from 'react'
+import {Container,Row,Col} from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 import cover1 from './Assets/cover1.jpg';
 import cover2 from './Assets/cover2.jpg';
@@ -84,31 +85,42 @@ function Home() {
     </Carousel>
     </div>
 
-    <div className='main-items'>
+    <Container fluid >
+      <Row>
+        <Col sm={3}>
     <Card className='items' >
       <Card.Img className='img-items' src={footwear} />
         <Button className='btn-items'>Footwear</Button>
     </Card>
+    </Col>
+    <Col sm={3}>
     <Card className='items' >
       <Card.Img className='img-items' src={accessories} />
         <Button className='btn-items'>Accessories</Button>
-        
     </Card>
+    </Col>
+    <Col sm={3}>
     <Card className='items' >
       <Card.Img className='img-items' src={watch} />
         <Button className='btn-items'>Watches</Button>
-        
     </Card>
+    </Col>
+    <Col sm={3}>
     <Card className='items' >
       <Card.Img className='img-items' src={cap} />
         <Button className='btn-items'>Caps & Hats</Button>
         
     </Card>
-    </div>
+    </Col>
+    </Row>
+    </Container>
 
 {/* Models */}
-    <div className='models-div'>
-      <Card className='model' >
+    
+    <Container fluid className='models-div'>
+      <Row>
+        <Col sm={4}>
+        <Card className='model'>
       <Card.Img className='img-model' src={model1} />
       <div className='bottom'>
       <h6>VIEW COLLECTIONS</h6>
@@ -116,10 +128,14 @@ function Home() {
       <p>your world of fashion in numbers</p>
       </div>
     </Card>
-    <Card className='model' >
+        </Col>
+        <Col sm={4}>
+        <Card className='model' >
       <Card.Img className='img-model' src={model2} />
     </Card>
-    <Card className='model' >
+        </Col>
+        <Col sm={4}>
+        <Card className='model' >
       <Card.Img className='img-model' src={model3} />
       <div className='bottom-1'>
       <h6>SUMMER SALE</h6>
@@ -127,13 +143,17 @@ function Home() {
       <Button className='btn-bottom-1'>Shop Now</Button>
       </div>
     </Card>
-    
-    </div>
-    <div className='heading'>
-      <h1>TRENDING</h1>
+        </Col>
+      </Row>
+    </Container>
+    <Container fluid className  ='heading'>
+      <Row>
+        <Col>
+        <h1>TRENDING</h1>
       <p><i>Top view in this week</i></p>
-    </div>
-
+        </Col>
+      </Row>
+    </Container>
     <div className='trending-div'>
       <div >
       <Card className='trending-items'>
@@ -181,10 +201,14 @@ function Home() {
     </Card>
       </div>
     </div>
-    <div className='heading'>
-      <h1>OUR PRODUCTS</h1>
+    <Container fluid className  ='heading'>
+      <Row>
+        <Col>
+        <h1>OUR PRODUCTS</h1>
       <p><i>Top view in the week</i></p>
-    </div>
+        </Col>
+      </Row>
+    </Container>
 
     <div className='row-product'>
     <Button className='btn-product'>Best Seller</Button>
@@ -269,11 +293,14 @@ function Home() {
     </Card>
     </div>
 
-
-    <div className='heading'>
-      <h1>LATEST FROM BLOGS</h1>
+    <Container fluid className  ='heading'>
+      <Row>
+        <Col>
+        <h1>LATEST FROM BLOGS</h1>
       <p><i>The freshest and most exciting news</i></p>
-    </div>
+        </Col>
+      </Row>
+    </Container>
 
     
       <div className='blog-div'>
@@ -299,68 +326,104 @@ function Home() {
       </Card.Body>
     </Card>
     </div>
-    <div className='heading'>
+    <Container fluid className  ='heading'>
+      <Row>
+        <Col>
       <h1>@ FOLLOW US ON INSTAGRAM</h1>
-    </div>
-       <div className='social-items'>
-        <img
+        </Col>
+      </Row>
+    </Container>
+
+      <Container fluid>
+        <Row>
+          <Col sm={2}>
+          <img
           className="img-social-items"
           src={social1}
           alt="First slide"
         />
-        <img
+          </Col>
+          <Col sm={2}>
+          <img
           className="img-social-items"
           src={social2}
           alt="First slide"
         />
-        <img
+          </Col>
+          <Col sm={2}>
+          <img
           className="img-social-items"
           src={social3}
           alt="First slide"
         />
-        <img
+          </Col>
+          <Col sm={2}>
+          <img
           className="img-social-items"
           src={social4}
           alt="First slide"
         />
-        <img
+          </Col>
+          <Col sm={2}>
+          <img
           className="img-social-items"
           src={social5}
           alt="First slide"
         />
-        <img
+          </Col>
+          <Col sm={2}>
+          <img
           className="img-social-items"
           src={social6}
           alt="First slide"
         />
+          </Col>
+        </Row>
+      </Container>
+       <div className='social-items'>
+        
+        
 
     </div>
 
-    <div className='about-div'>
+    {/* About */}
+    <Container>
+      <Row>
+        <Col sm={1}>
     <DirectionsCarOutlinedIcon/>
-    <div className='col-2'>
-<h6>FREE SHIPPING</h6>
+        </Col>
+        <Col sm={2}>
+        <h6>FREE SHIPPING</h6>
 <p>Free shipping on all US order<br/> or order above $200</p>
-</div>
+        </Col>
+        <Col sm={1}>
 <DonutLargeOutlinedIcon/>
-<div className='col-2'>
-      <h6>	
+        </Col>
+        <Col sm={2}>
+        <h6>	
 SUPPORT 24/7</h6>
 <p>Contact us 24 hours a day,<br/>7 days a week</p>
-</div>
+        </Col>
+        <Col sm={1}>
 <PublishedWithChangesOutlinedIcon/>
-<div className='col-2'>
-      <h6>	
+        </Col>
+        <Col sm={2}>
+        <h6>	
 30 DAYS RETURN</h6>
 <p>Simply return it within 30<br/>days for an exchange</p>
-</div>
+        </Col>
+        <Col sm={1}>
 <ShieldOutlinedIcon/>
-<div className='col-2'>
-      <h6>	
+        </Col>
+        <Col sm={2}>
+        <h6>	
 100% PAYMENT SECURE</h6>
 <p>We ensure secure payment<br/>with PEV</p>
-</div>
-    </div>
+        </Col>
+      </Row>
+    </Container>
+    {/* About End */}
+    
     </>
 
   )

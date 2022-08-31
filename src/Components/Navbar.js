@@ -22,7 +22,7 @@ function Header() {
     {/* Header Starts*/}
    
 
-    <Container className="header">
+    <Container fluid className='header'>
       <Row>
         <Col sm={4}>
         <CallOutlinedIcon />
@@ -42,7 +42,9 @@ function Header() {
       
       {/* Navbar Starts */}
     <Navbar>
-      <div className='navbar'>
+        <Container fluid className='Navbar'>
+          <Row>
+            <Col sm={4}>
       <Navbar.Collapse>
       <Nav className='nav-icons-1'>
         
@@ -53,6 +55,8 @@ function Header() {
             <Nav.Link href="#home"><PinterestIcon/></Nav.Link>
         </Nav>
       </Navbar.Collapse>
+      </Col>
+      <Col sm={6}>
         <Navbar.Collapse >
           <Nav className='nav-pages'>
             <Nav.Link href="/Home">Home</Nav.Link>
@@ -63,6 +67,8 @@ function Header() {
             <Nav.Link href="/Sales">Sales</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+      </Col>
+        <Col sm={2}>
         <Navbar.Collapse >
       <Nav className='nav-icons-2'>
             <Nav.Link href="#home"><SearchIcon/></Nav.Link>
@@ -71,7 +77,9 @@ function Header() {
             <Nav.Link href="#home"><AddShoppingCartOutlinedIcon/></Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      </div >
+      </Col>
+      </Row>
+      </Container>
     </Navbar>
       {/* Navbar Ends */}
     </>

@@ -1,4 +1,7 @@
 import React from 'react'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './Footer.css'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
@@ -13,8 +16,11 @@ import logo2 from '../Components/Assets/logo.png';
 
 function Footer() {
   return (
-    <div className='footer'>
-        <div className='footer-1'>
+    
+    <>
+      <Container fluid className='footer'>
+      <Row>
+        <Col>
         <img
           src={logo1}
           alt="logo" width={177} height={55}
@@ -26,9 +32,8 @@ function Footer() {
             <InstagramIcon className='icon'/>
             <PinterestIcon className='icon'/></li>
           </ul>
-        </div>
-
-        <div className='footer-2'>
+        </Col>
+        <Col>
         <img 
           src={logo2}
           alt="logo" width={96} height={27}
@@ -43,10 +48,9 @@ function Footer() {
             <InstagramIcon className='icon'/>
             <PinterestIcon className='icon'/></li>
           </ul>
-        </div>
-
-        <div className='footer-3'>
-          <ul>
+        </Col>
+        <Col>
+        <ul>
           <li><b>Categories</b></li>
           <li>Men</li>
           <li>Women</li>
@@ -55,9 +59,9 @@ function Footer() {
           <li>Dresses</li>
           <li>Skirts</li>
           </ul>
-        </div>
-        <div className='footer-4'>
-          <ul>
+        </Col>
+        <Col>
+        <ul>
           <li><b>Information</b></li>
           <li>About Us</li>
           <li>Contact</li>
@@ -66,9 +70,9 @@ function Footer() {
           <li>Shipping & Delivery</li>
           <li>Privacy Policy</li>
           </ul>
-        </div>
-        <div className='footer-5'>
-          <ul>
+        </Col>
+        <Col>
+        <ul>
           <li><b>Quick Links</b></li>
           <li>Store Location</li>
           <li>My Account</li>
@@ -77,8 +81,11 @@ function Footer() {
           <li>Size Guide</li>
           <li>FAQs</li>
           </ul>
-        </div>
-    </div>
+          </Col>
+      </Row>
+    </Container>
+       
+    </>
   )
 }
 
