@@ -42,7 +42,7 @@ import ShieldOutlinedIcon from '@mui/icons-material/ShieldOutlined';
 
 function Home() {
   return (<>
-      <div>
+      <Container fluid>
        <Carousel className="slider">
       <Carousel.Item className='item-slider-1'>
         <img
@@ -83,7 +83,7 @@ function Home() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
-    </div>
+    </Container>
 
     <Container fluid >
       <Row>
@@ -154,9 +154,10 @@ function Home() {
         </Col>
       </Row>
     </Container>
-    <div className='trending-div'>
-      <div >
-      <Card className='trending-items'>
+    <Container fluid className='trending-div'>
+      <Row>
+        <Col sm={3}>
+        <Card className='trending-items'>
       <Card.Img className='img-trending-items' src={trending1}/>
       <Card.Body>
         <h6>Cuffed Beanie</h6>
@@ -167,9 +168,9 @@ function Home() {
         <Button className='btn-trending'>XS</Button>
       </Card.Body>
     </Card>
-      </div>
-      <div >
-      <Card className='trending-items'>
+        </Col>
+        <Col sm={3}>
+        <Card className='trending-items'>
       <Card.Img className='img-trending-items' src={trending2}/>
       <Card.Body>
         <h6>Calvin Klien Logo Sweatpants</h6>
@@ -177,9 +178,9 @@ function Home() {
         </p>
       </Card.Body>
     </Card>
-      </div>
-      <div >
-      <Card className='trending-items'>
+          </Col>
+          <Col sm={3}>
+          <Card className='trending-items'>
       <Card.Img className='img-trending-items' src={trending3}/>
       <Card.Body>
         <h6>Cyan Boheme</h6>
@@ -188,9 +189,9 @@ function Home() {
         </p>
       </Card.Body>
     </Card>
-      </div>
-      <div >
-      <Card className='trending-items'>
+          </Col>
+          <Col sm={3}>
+          <Card className='trending-items'>
       <Card.Img className='img-trending-items' src={trending4}/>
       <Card.Body>
         <h6>Cyan Boheme</h6>
@@ -199,8 +200,10 @@ function Home() {
         </p>
       </Card.Body>
     </Card>
-      </div>
-    </div>
+          </Col>
+      </Row>
+    </Container>
+
     <Container fluid className  ='heading'>
       <Row>
         <Col>
@@ -208,16 +211,18 @@ function Home() {
       <p><i>Top view in the week</i></p>
         </Col>
       </Row>
+      <Row className='row-product'>
+    
+    <Button className='btn-product'>Best Seller</Button>    
+    <Button className='btn-product'>New</Button>    
+    <Button className='btn-product'>Sale</Button>    
+    <Button className='btn-product'>Top Rate</Button> 
+       </Row>
     </Container>
-
-    <div className='row-product'>
-    <Button className='btn-product'>Best Seller</Button>
-    <Button className='btn-product'>New</Button>
-    <Button className='btn-product'>Sale</Button>
-    <Button className='btn-product'>Top Rate</Button>
-    </div>
-      <div className='product-div1'>
-      <Card className='product'>
+    <Container fluid>
+      <Row>
+        <Col sm={3}>
+        <Card className='product'>
       <Card.Img className='img-product' src={product1}/>
       <Card.Body>
         <h6>Jean Super Man</h6>
@@ -226,7 +231,9 @@ function Home() {
         </Card.Text>
       </Card.Body>
     </Card>
-      <Card className='product'>
+        </Col>
+        <Col sm={3}>
+        <Card className='product'>
       <Card.Img className='img-product' src={product2}/>
       <Card.Body>
         <h6>Jean Hot fire brown</h6>
@@ -235,7 +242,9 @@ function Home() {
         </Card.Text>
       </Card.Body>
     </Card>
-      <Card className='product'>
+        </Col>
+        <Col sm={3}>
+        <Card className='product'>
       <Card.Img className='img-product' src={product3}/>
       <Card.Body>
         <h6>Jean Lion king black</h6>
@@ -244,7 +253,9 @@ function Home() {
         </Card.Text>
       </Card.Body>
     </Card>
-      <Card className='product'>
+        </Col>
+        <Col sm={3}>
+        <Card className='product'>
       <Card.Img className='img-product' src={product4}/>
       <Card.Body>
         <h6>Jean Raw Denim Black</h6>
@@ -253,9 +264,11 @@ function Home() {
         </Card.Text>
       </Card.Body>
     </Card>
-    </div>
-    <div className='product-div2'>
-      <Card className='product'>
+        </Col>
+      </Row>
+      <Row>
+        <Col sm={3}>
+        <Card className='product'>
       <Card.Img className='img-product' src={product5}/>
       <Card.Body>
         <h6>Denim Shell Top with Ruffle Front</h6>
@@ -264,7 +277,9 @@ function Home() {
         </Card.Text>
       </Card.Body>
     </Card>
-      <Card className='product'>
+        </Col>
+        <Col sm={3}>
+        <Card className='product'>
       <Card.Img className='img-product' src={product6}/>
       <Card.Body>
         <h6>Jean Roshe One Casual</h6>
@@ -273,7 +288,9 @@ function Home() {
         </Card.Text>
       </Card.Body>
     </Card>
-      <Card className='product'>
+        </Col>
+        <Col sm={3}>
+        <Card className='product'>
       <Card.Img className='img-product' src={product7}/>
       <Card.Body>
         <h6>ASOS Ridley High Waist</h6>
@@ -282,7 +299,9 @@ function Home() {
         </Card.Text>
       </Card.Body>
     </Card>
-      <Card className='product'>
+        </Col>
+        <Col sm={3}>
+        <Card className='product'>
       <Card.Img className='img-product' src={product8}/>
       <Card.Body>
         <h6>Analogue Resin Strap Watch</h6>
@@ -291,7 +310,9 @@ function Home() {
         </Card.Text>
       </Card.Body>
     </Card>
-    </div>
+        </Col>
+      </Row>
+    </Container>
 
     <Container fluid className  ='heading'>
       <Row>
@@ -302,30 +323,35 @@ function Home() {
       </Row>
     </Container>
 
-    
-      <div className='blog-div'>
-      <Card className='blog'>
+    <Container fluid className='blog-div'>
+      <Row>
+        <Col sm={4}>
+        <Card className='blog'>
       <Card.Img className='img-blog' src={blog1}/>
       <Card.Body>
         <h6>Blog 1</h6>
-        
       </Card.Body>
     </Card>
-      <Card className='blog'>
+        </Col>
+        <Col sm={4}>
+        <Card className='blog'>
       <Card.Img className='img-blog' src={blog2}/>
       <Card.Body>
         <h6>Blog 2</h6>
-        
       </Card.Body>
     </Card>
-      <Card className='blog'>
+        </Col>
+        <Col sm={4}>
+        <Card className='blog'>
       <Card.Img className='img-blog' src={blog3}/>
       <Card.Body>
         <h6>Blog 3</h6>
-        
       </Card.Body>
     </Card>
-    </div>
+        </Col>
+      </Row>
+    </Container>
+
     <Container fluid className  ='heading'>
       <Row>
         <Col>
@@ -387,7 +413,7 @@ function Home() {
     </div>
 
     {/* About */}
-    <Container>
+    <Container fluid className  ='about-div'>
       <Row>
         <Col sm={1}>
     <DirectionsCarOutlinedIcon/>

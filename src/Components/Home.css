@@ -172,7 +172,7 @@ transform:scale(1.2);
     justify-content: center;
 }
 .btn-product{
-    width: 10%;
+    width: 20rem;
     margin: 1%;
     background-color: transparent;
     color: black;
@@ -181,12 +181,6 @@ transform:scale(1.2);
     font-family: 'Poppins', 'Open Sans', 'Helvetica Neue';
     font-size: 14px;
     font-weight: 600;
-}
-.product-div1,.product-div2{
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
 }
 .product{
     height: 426px;
