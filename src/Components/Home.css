@@ -1,6 +1,10 @@
-.btn-slider-1{
-    width: 120px;
-    border-radius: 20px;
+.slider{
+    max-width: 100%;
+    height: 600%;
+}
+.btn-slider{
+    max-width: 15em;
+    border-radius: 2em;
     background-color: transparent;
     color: black;
     border-color: black;
@@ -24,10 +28,7 @@
 }
 
 .items{
-    padding-left: 15px;
-    padding-right: 15px;
-    height: 284px;
-    width: 315px;
+    margin-top: 1em;
     border: none;
     border-radius:0%;
     float:left;
@@ -37,6 +38,8 @@
     cursor:default;
 }
 .img-items{
+    height: 20em;
+    width: 18em;
     display:block;
 position:relative;
 -webkit-transition:all .4s linear;

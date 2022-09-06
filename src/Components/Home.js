@@ -1,6 +1,5 @@
 import React from 'react'
-import {Container,Row,Col} from 'react-bootstrap';
-import Carousel from 'react-bootstrap/Carousel';
+import {Container,Row,Col,Carousel} from 'react-bootstrap';
 import cover1 from './Assets/cover1.jpg';
 import cover2 from './Assets/cover2.jpg';
 import cover3 from './Assets/cover3.jpg';
@@ -53,7 +52,7 @@ function Home() {
         <Carousel.Caption style={{color:'black'}}>
           <h5>Spring - Summer 2020</h5>
           <h2>FLASH SALE OF 70%</h2>
-          <Button className='btn-slider-1'>Shop now</Button>
+          <Button className='btn-slider'>Shop now</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -66,7 +65,7 @@ function Home() {
 <Carousel.Caption style={{color:'black'}}>
           <h5>Spring - Summer 2020</h5>
           <h2>FLASH SALE OF 70%</h2>
-          <Button className='btn-slider-1'>Shop now</Button>
+          <Button className='btn-slider'>Shop now</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -79,12 +78,12 @@ function Home() {
 <Carousel.Caption style={{color:'black'}}>
           <h5>Spring - Summer 2020</h5>
           <h2>FLASH SALE OF 70%</h2>
-          <Button className='btn-slider-1'>Shop now</Button>
+          <Button className='btn-slider'>Shop now</Button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
     </Container>
-
+{/* Items Start */}
     <Container fluid >
       <Row>
         <Col sm={3}>
@@ -114,7 +113,7 @@ function Home() {
     </Col>
     </Row>
     </Container>
-
+{/* Items End */}
 {/* Models */}
     
     <Container fluid className='models-div'>

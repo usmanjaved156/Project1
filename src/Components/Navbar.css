@@ -1,9 +1,8 @@
 
 .header{
-    padding-top: 8px;
+    height: 30%;
     background-color: #EADFDD;
-    height: 40px;
     font-family: 'Poppins', 'Open Sans', 'Helvetica Neue';
-    font-size: 14px;
+    font-size: 80%;
     font-weight: 400;
 } 

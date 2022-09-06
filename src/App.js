@@ -7,7 +7,6 @@ import Elements from './Components/Elements';
 import Sales from './Components/Sales';
 import Products from './Components/Products';
 import Shop from './Components/Shop';
-import Scroll from './Components/Scroll';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 
@@ -15,7 +14,6 @@ function App() {
   return (<>
   
     <Navbar />
-    <Scroll/>
 
     <Router>
       <Routes>

@@ -1,8 +1,5 @@
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import { Nav, Navbar, NavLink, Row, Col } from "react-bootstrap";
 import CallOutlinedIcon from '@mui/icons-material/CallOutlined';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import SearchIcon from '@mui/icons-material/Search';
@@ -41,46 +38,39 @@ function Header() {
       {/* Header Ends*/}
       
       {/* Navbar Starts */}
-    <Navbar>
-        <Container fluid className='Navbar'>
-          <Row>
-            <Col sm={4}>
-      <Navbar.Collapse>
+      <Navbar collapseOnSelect expand="sm" bg="white" variant="light">
+            <Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
+            <Navbar.Collapse id="navbarScroll">
+                
       <Nav className='nav-icons-1'>
         
-      <Nav.Link href="#home"><FacebookIcon/></Nav.Link>
-            <Nav.Link href="#home"><TwitterIcon/></Nav.Link>
-            <Nav.Link href="#home"><GoogleIcon/></Nav.Link>
-            <Nav.Link href="#home"><InstagramIcon/></Nav.Link>
-            <Nav.Link href="#home"><PinterestIcon/></Nav.Link>
+      <NavLink href="#home"><FacebookIcon/></NavLink>
+            <NavLink href="#home"><TwitterIcon/></NavLink>
+            <NavLink href="#home"><GoogleIcon/></NavLink>
+            <NavLink href="#home"><InstagramIcon/></NavLink>
+            <NavLink href="#home"><PinterestIcon/></NavLink>
         </Nav>
       </Navbar.Collapse>
-      </Col>
-      <Col sm={6}>
         <Navbar.Collapse >
           <Nav className='nav-pages'>
-            <Nav.Link href="/Home">Home</Nav.Link>
-            <Nav.Link href="/Shop">Shop</Nav.Link>
-            <Nav.Link href="/Products">Products</Nav.Link>
-            <Nav.Link href="/Pages">Pages</Nav.Link>
-            <Nav.Link href="/Elements">Elements</Nav.Link>
-            <Nav.Link href="/Sales">Sales</Nav.Link>
+            <NavLink href="/Home">Home</NavLink>
+            <NavLink href="/Shop">Shop</NavLink>
+            <NavLink href="/Products">Products</NavLink>
+            <NavLink href="/Pages">Pages</NavLink>
+            <NavLink href="/Elements">Elements</NavLink>
+            <NavLink href="/Sales">Sales</NavLink>
           </Nav>
         </Navbar.Collapse>
-      </Col>
-        <Col sm={2}>
         <Navbar.Collapse >
       <Nav className='nav-icons-2'>
-            <Nav.Link href="#home"><SearchIcon/></Nav.Link>
-            <Nav.Link href="#home"><AccountCircleOutlinedIcon/></Nav.Link>
-            <Nav.Link href="#home"><FavoriteBorderOutlinedIcon/></Nav.Link>
-            <Nav.Link href="#home"><AddShoppingCartOutlinedIcon/></Nav.Link>
+            <NavLink href="#home"><SearchIcon/></NavLink>
+            <NavLink href="#home"><AccountCircleOutlinedIcon/></NavLink>
+            <NavLink href="#home"><FavoriteBorderOutlinedIcon/></NavLink>
+            <NavLink href="#home"><AddShoppingCartOutlinedIcon/></NavLink>
         </Nav>
       </Navbar.Collapse>
-      </Col>
-      </Row>
-      </Container>
-    </Navbar>
+    </Navbar>  
+
       {/* Navbar Ends */}
     </>
   );
