@@ -41,111 +41,113 @@ import ShieldOutlinedIcon from '@mui/icons-material/ShieldOutlined';
 
 function Home() {
   return (<>
-      <Container fluid>
-       <Carousel className="slider">
-      <Carousel.Item className='item-slider-1'>
-        <img
-          className="d-block w-100"
+  {/* Slider Start */}
+  <Container fluid >
+    <Row>
+      <Col >
+      <Carousel>
+      <Carousel.Item>
+        <img className='img-carousel'
           src={cover1}
           alt="First slide"
         />
         <Carousel.Caption style={{color:'black'}}>
-          <h5>Spring - Summer 2020</h5>
-          <h2>FLASH SALE OF 70%</h2>
+          <p className='carousel-caption-1'>Spring - Summer 2020</p>
+          <p className='carousel-caption-2'>FLASH SALE OF 70%</p>
           <Button className='btn-slider'>Shop now</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
+        <img className='img-carousel'
           src={cover2}
           alt="Second slide"
         />
-
-<Carousel.Caption style={{color:'black'}}>
-          <h5>Spring - Summer 2020</h5>
-          <h2>FLASH SALE OF 70%</h2>
+         <Carousel.Caption style={{color:'black'}}>
+          <p className='carousel-caption-1'>Spring - Summer 2020</p>
+          <p className='carousel-caption-2'>FLASH SALE OF 70%</p>
           <Button className='btn-slider'>Shop now</Button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
-          className="d-block w-100"
+        <img className='img-carousel'
           src={cover3}
           alt="Third slide"
         />
-
-<Carousel.Caption style={{color:'black'}}>
-          <h5>Spring - Summer 2020</h5>
-          <h2>FLASH SALE OF 70%</h2>
+         <Carousel.Caption style={{color:'black'}}>
+          <p className='carousel-caption-1'>Spring - Summer 2020</p>
+          <p className='carousel-caption-2'>FLASH SALE OF 70%</p>
           <Button className='btn-slider'>Shop now</Button>
         </Carousel.Caption>
       </Carousel.Item>
-    </Carousel>
-    </Container>
-{/* Items Start */}
-    <Container fluid >
-      <Row>
-        <Col sm={3}>
-    <Card className='items' >
-      <Card.Img className='img-items' src={footwear} />
-        <Button className='btn-items'>Footwear</Button>
-    </Card>
-    </Col>
-    <Col sm={3}>
-    <Card className='items' >
-      <Card.Img className='img-items' src={accessories} />
-        <Button className='btn-items'>Accessories</Button>
-    </Card>
-    </Col>
-    <Col sm={3}>
-    <Card className='items' >
-      <Card.Img className='img-items' src={watch} />
-        <Button className='btn-items'>Watches</Button>
-    </Card>
-    </Col>
-    <Col sm={3}>
-    <Card className='items' >
-      <Card.Img className='img-items' src={cap} />
-        <Button className='btn-items'>Caps & Hats</Button>
-        
-    </Card>
-    </Col>
+      </Carousel>
+      </Col>
     </Row>
+  </Container>
+{/* Slider End */}
+
+{/* Items Start */}
+    <Container fluid>
+      <Row>
+        <Col lg={3} className='col-item'>
+        <Card className='card-item'>
+      <Card.Img className='img-items' src={footwear} />
+      <Button className='btn-items'>Footwear</Button>
+        </Card>
+        </Col>
+        <Col lg={3} className='col-item'>
+        <Card className='card-item'>
+      <Card.Img className='img-items' src={accessories} />
+      <Button className='btn-items'>Accessories</Button>
+        </Card>
+        </Col>
+        <Col lg={3} className='col-item'>
+        <Card className='card-item'>
+      <Card.Img className='img-items' src={watch} />
+      <Button className='btn-items'>Watches</Button>
+        </Card>
+        </Col>
+        <Col lg={3} className='col-item'>
+        <Card className='card-item'>
+      <Card.Img className='img-items' src={cap} />
+      <Button className='btn-items'>Caps & Hats</Button>
+        </Card>
+        </Col>
+      </Row>
     </Container>
 {/* Items End */}
-{/* Models */}
-    
-    <Container fluid className='models-div'>
-      <Row>
-        <Col sm={4}>
-        <Card className='model'>
-      <Card.Img className='img-model' src={model1} />
-      <div className='bottom'>
+
+{/* Model Start */}
+      <Container fluid>
+        <Row>
+          <Col lg={4} className='col-model'>
+          <Card className='card-model'>
+        <Card.Img className='img-model' src={model1} />
+        <div className='bottom'>
       <h6>VIEW COLLECTIONS</h6>
       <h1>LOOKBOOK</h1>
       <p>your world of fashion in numbers</p>
       </div>
-    </Card>
-        </Col>
-        <Col sm={4}>
-        <Card className='model' >
-      <Card.Img className='img-model' src={model2} />
-    </Card>
-        </Col>
-        <Col sm={4}>
-        <Card className='model' >
-      <Card.Img className='img-model' src={model3} />
-      <div className='bottom-1'>
+      </Card>
+      </Col>
+      <Col lg={4} className='col-model'>
+      <Card className='card-model'>
+        <Card.Img className='img-model' src={model2} />
+      </Card>
+      </Col>
+      <Col lg={4} className='col-model'>
+      <Card className='card-model'>
+        <Card.Img className='img-model' src={model3} />
+        <div className='bottom-1'>
       <h6>SUMMER SALE</h6>
       <h1>UP TO 70%</h1>
       <Button className='btn-bottom-1'>Shop Now</Button>
       </div>
-    </Card>
-        </Col>
-      </Row>
-    </Container>
-    <Container fluid className  ='heading'>
+      </Card>
+          </Col>
+        </Row>
+      </Container>
+{/* Model End */}
+<Container fluid className  ='heading'>
       <Row>
         <Col>
         <h1>TRENDING</h1>
@@ -153,10 +155,11 @@ function Home() {
         </Col>
       </Row>
     </Container>
-    <Container fluid className='trending-div'>
-      <Row>
-        <Col sm={3}>
-        <Card className='trending-items'>
+{/* Trending Start */}
+      <Container fluid>
+        <Row>
+          <Col lg={3} className='col-trending-item'>
+          <Card className='trending-items'>
       <Card.Img className='img-trending-items' src={trending1}/>
       <Card.Body>
         <h6>Cuffed Beanie</h6>
@@ -167,9 +170,9 @@ function Home() {
         <Button className='btn-trending'>XS</Button>
       </Card.Body>
     </Card>
-        </Col>
-        <Col sm={3}>
-        <Card className='trending-items'>
+    </Col>
+    <Col lg={3} className='col-trending-item'>
+    <Card className='trending-items'>
       <Card.Img className='img-trending-items' src={trending2}/>
       <Card.Body>
         <h6>Calvin Klien Logo Sweatpants</h6>
@@ -177,9 +180,9 @@ function Home() {
         </p>
       </Card.Body>
     </Card>
-          </Col>
-          <Col sm={3}>
-          <Card className='trending-items'>
+    </Col>
+    <Col lg={3} className='col-trending-item'>
+    <Card className='trending-items'>
       <Card.Img className='img-trending-items' src={trending3}/>
       <Card.Body>
         <h6>Cyan Boheme</h6>
@@ -188,9 +191,9 @@ function Home() {
         </p>
       </Card.Body>
     </Card>
-          </Col>
-          <Col sm={3}>
-          <Card className='trending-items'>
+    </Col>
+    <Col lg={3} className='col-trending-item'>
+    <Card className='trending-items'>
       <Card.Img className='img-trending-items' src={trending4}/>
       <Card.Body>
         <h6>Cyan Boheme</h6>
@@ -200,10 +203,10 @@ function Home() {
       </Card.Body>
     </Card>
           </Col>
-      </Row>
-    </Container>
-
-    <Container fluid className  ='heading'>
+        </Row>
+      </Container>
+{/* Trending End */}
+<Container fluid className  ='heading'>
       <Row>
         <Col>
         <h1>OUR PRODUCTS</h1>
@@ -218,102 +221,87 @@ function Home() {
     <Button className='btn-product'>Top Rate</Button> 
        </Row>
     </Container>
-    <Container fluid>
-      <Row>
-        <Col sm={3}>
-        <Card className='product'>
+{/* Product Start */}
+        <Container fluid>
+          <Row>
+            <Col lg={3} className='col-product'>
+            <Card className='product'>
       <Card.Img className='img-product' src={product1}/>
-      <Card.Body>
+      <Card.Body style={{paddingTop:'0'}}>
         <h6>Jean Super Man</h6>
-        <Card.Text>
         $33.00
-        </Card.Text>
       </Card.Body>
     </Card>
-        </Col>
-        <Col sm={3}>
-        <Card className='product'>
+            </Col>
+            <Col lg={3} className='col-product'>
+            <Card className='product'>
       <Card.Img className='img-product' src={product2}/>
-      <Card.Body>
+      <Card.Body style={{paddingTop:'0'}}>
         <h6>Jean Hot fire brown</h6>
-        <Card.Text>
         $49.00
-        </Card.Text>
       </Card.Body>
     </Card>
-        </Col>
-        <Col sm={3}>
-        <Card className='product'>
+            </Col>
+            <Col lg={3} className='col-product'>
+            <Card className='product'>
       <Card.Img className='img-product' src={product3}/>
-      <Card.Body>
+      <Card.Body style={{paddingTop:'0'}}>
         <h6>Jean Lion king black</h6>
-        <Card.Text>
         $65.00
-        </Card.Text>
       </Card.Body>
     </Card>
-        </Col>
-        <Col sm={3}>
-        <Card className='product'>
+            </Col>
+            <Col lg={3} className='col-product'>
+            <Card className='product'>
       <Card.Img className='img-product' src={product4}/>
-      <Card.Body>
+      <Card.Body style={{paddingTop:'0'}}>
         <h6>Jean Raw Denim Black</h6>
-        <Card.Text>
         $92.00
-        </Card.Text>
       </Card.Body>
     </Card>
-        </Col>
-      </Row>
-      <Row>
-        <Col sm={3}>
-        <Card className='product'>
+            </Col>
+          </Row>
+          <Row>
+            <Col lg={3} className='col-product'>
+            <Card className='product'>
       <Card.Img className='img-product' src={product5}/>
-      <Card.Body>
-        <h6>Denim Shell Top with Ruffle Front</h6>
-        <Card.Text>
+      <Card.Body style={{paddingTop:'0'}}>
+        <h6>Denim Shell with Ruffle Front</h6>
         $58.00
-        </Card.Text>
       </Card.Body>
     </Card>
-        </Col>
-        <Col sm={3}>
-        <Card className='product'>
+            </Col>
+            <Col lg={3} className='col-product'>
+            <Card className='product'>
       <Card.Img className='img-product' src={product6}/>
-      <Card.Body>
+      <Card.Body style={{paddingTop:'0'}}>
         <h6>Jean Roshe One Casual</h6>
-        <Card.Text>
         $115.00
-        </Card.Text>
       </Card.Body>
     </Card>
-        </Col>
-        <Col sm={3}>
-        <Card className='product'>
+            </Col>
+            <Col lg={3} className='col-product'>
+            <Card className='product'>
       <Card.Img className='img-product' src={product7}/>
-      <Card.Body>
+      <Card.Body style={{paddingTop:'0'}}>
         <h6>ASOS Ridley High Waist</h6>
-        <Card.Text>
         $49.00
-        </Card.Text>
       </Card.Body>
     </Card>
-        </Col>
-        <Col sm={3}>
-        <Card className='product'>
+            </Col>
+            <Col lg={3} className='col-product'>
+            <Card className='product'>
       <Card.Img className='img-product' src={product8}/>
-      <Card.Body>
+      <Card.Body style={{paddingTop:'0'}}>
         <h6>Analogue Resin Strap Watch</h6>
-        <Card.Text>
         $56.00
-        </Card.Text>
       </Card.Body>
     </Card>
-        </Col>
-      </Row>
-    </Container>
-
-    <Container fluid className  ='heading'>
+            </Col>
+          </Row>
+        </Container>
+{/* Product End */}
+<Container fluid className  ='heading'>
       <Row>
         <Col>
         <h1>LATEST FROM BLOGS</h1>
@@ -321,82 +309,82 @@ function Home() {
         </Col>
       </Row>
     </Container>
-
-    <Container fluid className='blog-div'>
-      <Row>
-        <Col sm={4}>
-        <Card className='blog'>
+{/* Blog Start */}
+      <Container fluid>
+        <Row>
+          <Col lg={4} className='col-blog'>
+          <Card className='blog'>
       <Card.Img className='img-blog' src={blog1}/>
       <Card.Body>
         <h6>Blog 1</h6>
       </Card.Body>
     </Card>
-        </Col>
-        <Col sm={4}>
-        <Card className='blog'>
+          </Col>
+          <Col lg={4} className='col-blog'>
+          <Card className='blog'>
       <Card.Img className='img-blog' src={blog2}/>
       <Card.Body>
         <h6>Blog 2</h6>
       </Card.Body>
     </Card>
-        </Col>
-        <Col sm={4}>
-        <Card className='blog'>
+          </Col>
+          <Col lg={4} className='col-blog'>
+          <Card className='blog'>
       <Card.Img className='img-blog' src={blog3}/>
       <Card.Body>
         <h6>Blog 3</h6>
       </Card.Body>
     </Card>
-        </Col>
-      </Row>
-    </Container>
-
-    <Container fluid className  ='heading'>
+          </Col>
+        </Row>
+      </Container>
+{/* Blog End */}
+<Container fluid className  ='heading'>
       <Row>
         <Col>
       <h1>@ FOLLOW US ON INSTAGRAM</h1>
         </Col>
       </Row>
     </Container>
-
+{/* Socail Start*/}
       <Container fluid>
         <Row>
-          <Col sm={2}>
+          <Col lg={2} className='col-social'>
           <img
           className="img-social-items"
           src={social1}
           alt="First slide"
         />
           </Col>
-          <Col sm={2}>
+          <Col lg={2} className='col-social'>
           <img
           className="img-social-items"
           src={social2}
           alt="First slide"
         />
           </Col>
-          <Col sm={2}>
+          <Col lg={2} className='col-social'>
           <img
           className="img-social-items"
           src={social3}
           alt="First slide"
         />
           </Col>
-          <Col sm={2}>
+          <Col lg={2} className='col-social'>
           <img
           className="img-social-items"
           src={social4}
           alt="First slide"
         />
           </Col>
-          <Col sm={2}>
+          <Col lg={2} className='col-social'>
           <img
           className="img-social-items"
           src={social5}
           alt="First slide"
         />
           </Col>
-          <Col sm={2}>
+          <Col lg={2} className='col-social'>
           <img
           className="img-social-items"
           src={social6}
@@ -405,50 +393,46 @@ function Home() {
           </Col>
         </Row>
       </Container>
-       <div className='social-items'>
-        
-        
+{/* Socail End*/}
 
-    </div>
-
-    {/* About */}
-    <Container fluid className  ='about-div'>
+{/* About Start */}
+      <Container>
       <Row>
-        <Col sm={1}>
+        <Col lg={1} className='col-about'>
     <DirectionsCarOutlinedIcon/>
         </Col>
-        <Col sm={2}>
+        <Col lg={2} className='col-about'>
         <h6>FREE SHIPPING</h6>
 <p>Free shipping on all US order<br/> or order above $200</p>
         </Col>
-        <Col sm={1}>
+        <Col lg={1} className='col-about'>
 <DonutLargeOutlinedIcon/>
         </Col>
-        <Col sm={2}>
+        <Col lg={2} className='col-about'>
         <h6>	
 SUPPORT 24/7</h6>
 <p>Contact us 24 hours a day,<br/>7 days a week</p>
         </Col>
-        <Col sm={1}>
+        <Col lg={1} className='col-about'>
 <PublishedWithChangesOutlinedIcon/>
         </Col>
-        <Col sm={2}>
+        <Col lg={2} className='col-about'>
         <h6>	
 30 DAYS RETURN</h6>
 <p>Simply return it within 30<br/>days for an exchange</p>
         </Col>
-        <Col sm={1}>
+        <Col lg={1} className='col-about'>
 <ShieldOutlinedIcon/>
         </Col>
-        <Col sm={2}>
+        <Col lg={2} className='col-about'>
         <h6>	
 100% PAYMENT SECURE</h6>
 <p>We ensure secure payment<br/>with PEV</p>
         </Col>
-      </Row>
-    </Container>
-    {/* About End */}
-    
+        </Row>
+      </Container>
+{/* About End */}
+
     </>
 
   )

@@ -38,7 +38,7 @@ function Header() {
       {/* Header Ends*/}
       
       {/* Navbar Starts */}
-      <Navbar collapseOnSelect expand="sm" bg="white" variant="light">
+      <Navbar collapseOnSelect expand="md" bg="white" variant="light">
             <Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 
