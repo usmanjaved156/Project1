@@ -86,7 +86,37 @@ function Home() {
 {/* Slider End */}
 
 {/* Items Start */}
-    <Container fluid>
+<div className='main-items'>
+<Container fluid>
+      <Row>
+        <Col lg={3} md={4} sm={6} className="main-items-col">
+          <Card className='items' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"0%",padding:"0px"}}>
+            <Card.Img className='img-items' src={footwear} />
+            <Button className='btn-items'>Footwear</Button>
+          </Card>  
+        </Col>
+        <Col lg={3} md={4} sm={6} className="main-items-col">
+          <Card className='items' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
+            <Card.Img className='img-items' src={accessories} />
+            <Button className='btn-items'>Accessories</Button>
+          </Card>
+        </Col>
+        <Col lg={3} md={4} sm={6} className="main-items-col">
+        <Card className='items' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
+          <Card.Img className='img-items' src={watch} />
+            <Button className='btn-items'>Watches</Button>
+          </Card>
+        </Col>
+        <Col lg={3} md={4} sm={6} className="main-items-col">
+        <Card className='items' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
+          <Card.Img className='img-items' src={cap} />
+            <Button className='btn-items'>Caps & Hats</Button>
+          </Card> 
+       </Col>
+      </Row>
+    </Container>
+</div>
+    {/* <Container fluid>
       <Row>
         <Col lg={3} className='col-item'>
         <Card className='card-item'>
@@ -113,14 +143,15 @@ function Home() {
         </Card>
         </Col>
       </Row>
-    </Container>
+    </Container> */}
 {/* Items End */}
 
 {/* Model Start */}
+<div className='main-model'>
       <Container fluid>
         <Row>
-          <Col lg={4} className='col-model'>
-          <Card className='card-model'>
+          <Col lg={4} md={6} sm={6} className='col-model'>
+          <Card className='model' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
         <Card.Img className='img-model' src={model1} />
         <div className='bottom'>
       <h6>VIEW COLLECTIONS</h6>
@@ -129,13 +160,13 @@ function Home() {
       </div>
       </Card>
       </Col>
-      <Col lg={4} className='col-model'>
-      <Card className='card-model'>
+      <Col lg={4} md={6} sm={6} className='col-model'>
+      <Card className='model' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
         <Card.Img className='img-model' src={model2} />
       </Card>
       </Col>
-      <Col lg={4} className='col-model'>
-      <Card className='card-model'>
+      <Col lg={4} md={6} sm={6} className='col-model'>
+      <Card className='model' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
         <Card.Img className='img-model' src={model3} />
         <div className='bottom-1'>
       <h6>SUMMER SALE</h6>
@@ -146,6 +177,7 @@ function Home() {
           </Col>
         </Row>
       </Container>
+      </div>
 {/* Model End */}
 <Container fluid className  ='heading'>
       <Row>
@@ -156,33 +188,31 @@ function Home() {
       </Row>
     </Container>
 {/* Trending Start */}
+<div className='main-trending'>
       <Container fluid>
         <Row>
-          <Col lg={3} className='col-trending-item'>
-          <Card className='trending-items'>
+          <Col lg={3} md={4} sm={6} className='col-trending-item' >
+          <Card className='trending-items' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-trending-items' src={trending1}/>
       <Card.Body>
         <h6>Cuffed Beanie</h6>
         <p>$115.00
         </p>
-        <Button className='btn-trending'>L</Button>
-        <Button className='btn-trending'>M</Button>
-        <Button className='btn-trending'>XS</Button>
       </Card.Body>
     </Card>
     </Col>
-    <Col lg={3} className='col-trending-item'>
-    <Card className='trending-items'>
+    <Col lg={3} md={4} sm={6} className='col-trending-item' >
+    <Card className='trending-items' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-trending-items' src={trending2}/>
       <Card.Body>
-        <h6>Calvin Klien Logo Sweatpants</h6>
+        <h6>Calvin Klien</h6>
         <p>$39.00
         </p>
       </Card.Body>
     </Card>
     </Col>
-    <Col lg={3} className='col-trending-item'>
-    <Card className='trending-items'>
+    <Col lg={3} md={4} sm={6} className='col-trending-item' >
+    <Card className='trending-items' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-trending-items' src={trending3}/>
       <Card.Body>
         <h6>Cyan Boheme</h6>
@@ -192,8 +222,8 @@ function Home() {
       </Card.Body>
     </Card>
     </Col>
-    <Col lg={3} className='col-trending-item'>
-    <Card className='trending-items'>
+    <Col lg={3} md={4} sm={6} className='col-trending-item' >
+    <Card className='trending-items' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-trending-items' src={trending4}/>
       <Card.Body>
         <h6>Cyan Boheme</h6>
@@ -205,6 +235,7 @@ function Home() {
           </Col>
         </Row>
       </Container>
+      </div>
 {/* Trending End */}
 <Container fluid className  ='heading'>
       <Row>
@@ -222,10 +253,11 @@ function Home() {
        </Row>
     </Container>
 {/* Product Start */}
+<div className='main-product'>
         <Container fluid>
           <Row>
-            <Col lg={3} className='col-product'>
-            <Card className='product'>
+            <Col lg={3} md={4} sm={6} className='col-product'>
+            <Card className='product' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-product' src={product1}/>
       <Card.Body style={{paddingTop:'0'}}>
         <h6>Jean Super Man</h6>
@@ -233,8 +265,8 @@ function Home() {
       </Card.Body>
     </Card>
             </Col>
-            <Col lg={3} className='col-product'>
-            <Card className='product'>
+            <Col lg={3} md={4} sm={6} className='col-product'>
+            <Card className='product' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-product' src={product2}/>
       <Card.Body style={{paddingTop:'0'}}>
         <h6>Jean Hot fire brown</h6>
@@ -242,8 +274,8 @@ function Home() {
       </Card.Body>
     </Card>
             </Col>
-            <Col lg={3} className='col-product'>
-            <Card className='product'>
+            <Col lg={3} md={4} sm={6} className='col-product'>
+            <Card className='product' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-product' src={product3}/>
       <Card.Body style={{paddingTop:'0'}}>
         <h6>Jean Lion king black</h6>
@@ -251,8 +283,8 @@ function Home() {
       </Card.Body>
     </Card>
             </Col>
-            <Col lg={3} className='col-product'>
-            <Card className='product'>
+            <Col lg={3} md={4} sm={6} className='col-product'>
+            <Card className='product' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-product' src={product4}/>
       <Card.Body style={{paddingTop:'0'}}>
         <h6>Jean Raw Denim Black</h6>
@@ -262,8 +294,8 @@ function Home() {
             </Col>
           </Row>
           <Row>
-            <Col lg={3} className='col-product'>
-            <Card className='product'>
+            <Col lg={3} md={4} sm={6} className='col-product'>
+            <Card className='product' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-product' src={product5}/>
       <Card.Body style={{paddingTop:'0'}}>
         <h6>Denim Shell with Ruffle Front</h6>
@@ -271,8 +303,8 @@ function Home() {
       </Card.Body>
     </Card>
             </Col>
-            <Col lg={3} className='col-product'>
-            <Card className='product'>
+            <Col lg={3} md={4} sm={6} className='col-product'>
+            <Card className='product' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-product' src={product6}/>
       <Card.Body style={{paddingTop:'0'}}>
         <h6>Jean Roshe One Casual</h6>
@@ -280,8 +312,8 @@ function Home() {
       </Card.Body>
     </Card>
             </Col>
-            <Col lg={3} className='col-product'>
-            <Card className='product'>
+            <Col lg={3} md={4} sm={6} className='col-product'>
+            <Card className='product' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-product' src={product7}/>
       <Card.Body style={{paddingTop:'0'}}>
         <h6>ASOS Ridley High Waist</h6>
@@ -289,8 +321,8 @@ function Home() {
       </Card.Body>
     </Card>
             </Col>
-            <Col lg={3} className='col-product'>
-            <Card className='product'>
+            <Col lg={3} md={4} sm={6} className='col-product'>
+            <Card className='product' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-product' src={product8}/>
       <Card.Body style={{paddingTop:'0'}}>
         <h6>Analogue Resin Strap Watch</h6>
@@ -300,6 +332,7 @@ function Home() {
             </Col>
           </Row>
         </Container>
+        </div>
 {/* Product End */}
 <Container fluid className  ='heading'>
       <Row>
@@ -310,26 +343,27 @@ function Home() {
       </Row>
     </Container>
 {/* Blog Start */}
+<div className='main-blog'>
       <Container fluid>
         <Row>
-          <Col lg={4} className='col-blog'>
-          <Card className='blog'>
+          <Col lg={4} md={6} sm={6} className='col-blog'>
+          <Card className='blog' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-blog' src={blog1}/>
       <Card.Body>
         <h6>Blog 1</h6>
       </Card.Body>
     </Card>
           </Col>
-          <Col lg={4} className='col-blog'>
-          <Card className='blog'>
+          <Col lg={4} md={6} sm={6} className='col-blog'>
+          <Card className='blog' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-blog' src={blog2}/>
       <Card.Body>
         <h6>Blog 2</h6>
       </Card.Body>
     </Card>
           </Col>
-          <Col lg={4} className='col-blog'>
-          <Card className='blog'>
+          <Col lg={4} md={6} sm={6} className='col-blog'>
+          <Card className='blog' style={{width:"100%",height:"100%" ,padding:"0px",marginLeft:"10px" ,marginRight:"10px",borderRadius:"none"}}>
       <Card.Img className='img-blog' src={blog3}/>
       <Card.Body>
         <h6>Blog 3</h6>
@@ -338,6 +372,7 @@ function Home() {
           </Col>
         </Row>
       </Container>
+      </div>
 {/* Blog End */}
 <Container fluid className  ='heading'>
       <Row>
@@ -347,44 +382,45 @@ function Home() {
       </Row>
     </Container>
 {/* Socail Start*/}
+<div className='main-socail'>
       <Container fluid>
         <Row>
-          <Col lg={2} className='col-social'>
+          <Col lg={2} md={4} sm={6} className='col-social'>
           <img
           className="img-social-items"
           src={social1}
           alt="First slide"
         />
           </Col>
-          <Col lg={2} className='col-social'>
+          <Col lg={2} md={4} sm={6} className='col-social'>
           <img
           className="img-social-items"
           src={social2}
           alt="First slide"
         />
           </Col>
-          <Col lg={2} className='col-social'>
+          <Col lg={2} md={4} sm={6} className='col-social'>
           <img
           className="img-social-items"
           src={social3}
           alt="First slide"
         />
           </Col>
-          <Col lg={2} className='col-social'>
+          <Col lg={2} md={4} sm={6} className='col-social'>
           <img
           className="img-social-items"
           src={social4}
           alt="First slide"
         />
           </Col>
-          <Col lg={2} className='col-social'>
+          <Col lg={2} md={4} sm={6} className='col-social'>
           <img
           className="img-social-items"
           src={social5}
           alt="First slide"
         />
           </Col>
-          <Col lg={2} className='col-social'>
+          <Col lg={2} md={4} sm={6} className='col-social'>
           <img
           className="img-social-items"
           src={social6}
@@ -393,44 +429,42 @@ function Home() {
           </Col>
         </Row>
       </Container>
+      </div>
 {/* Socail End*/}
 
 {/* About Start */}
+<div className='main-about' >
       <Container>
-      <Row>
-        <Col lg={1} className='col-about'>
+      <Row >
+        <Col lg={1} md={1} sm={1} className='col-about'>
     <DirectionsCarOutlinedIcon/>
         </Col>
-        <Col lg={2} className='col-about'>
+        <Col lg={2} md={2} sm={2} className='col-about'>
         <h6>FREE SHIPPING</h6>
-<p>Free shipping on all US order<br/> or order above $200</p>
         </Col>
-        <Col lg={1} className='col-about'>
+        <Col lg={1} md={1} sm={1} className='col-about'>
 <DonutLargeOutlinedIcon/>
         </Col>
-        <Col lg={2} className='col-about'>
+        <Col lg={2} md={2} sm={2} className='col-about'>
         <h6>	
 SUPPORT 24/7</h6>
-<p>Contact us 24 hours a day,<br/>7 days a week</p>
         </Col>
-        <Col lg={1} className='col-about'>
+        <Col lg={1} md={1} sm={1} className='col-about'>
 <PublishedWithChangesOutlinedIcon/>
         </Col>
-        <Col lg={2} className='col-about'>
+        <Col lg={2} md={2} sm={2} className='col-about'>
         <h6>	
 30 DAYS RETURN</h6>
-<p>Simply return it within 30<br/>days for an exchange</p>
         </Col>
-        <Col lg={1} className='col-about'>
+        <Col lg={1} md={1} sm={1} className='col-about'>
 <ShieldOutlinedIcon/>
         </Col>
-        <Col lg={2} className='col-about'>
-        <h6>	
-100% PAYMENT SECURE</h6>
-<p>We ensure secure payment<br/>with PEV</p>
+        <Col lg={2} md={2} sm={2} className='col-about'>
+        <h6>100% PAYMENT SECURE</h6>
         </Col>
         </Row>
       </Container>
+      </div>
 {/* About End */}
 
     </>
