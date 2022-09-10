@@ -42,10 +42,10 @@ import ShieldOutlinedIcon from '@mui/icons-material/ShieldOutlined';
 function Home() {
   return (<>
   {/* Slider Start */}
-  <Container fluid >
+  <Container fluid className='slider'>
     <Row>
-      <Col >
-      <Carousel>
+      <Col>
+      <Carousel >
       <Carousel.Item>
         <img className='img-carousel'
           src={cover1}
@@ -244,13 +244,6 @@ function Home() {
       <p><i>Top view in the week</i></p>
         </Col>
       </Row>
-      <Row className='row-product'>
-    
-    <Button className='btn-product'>Best Seller</Button>    
-    <Button className='btn-product'>New</Button>    
-    <Button className='btn-product'>Sale</Button>    
-    <Button className='btn-product'>Top Rate</Button> 
-       </Row>
     </Container>
 {/* Product Start */}
 <div className='main-product'>

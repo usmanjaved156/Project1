@@ -1,8 +1,24 @@
 
 .header{
-    height: 2em;
     background-color: #EADFDD;
     font-family: 'Poppins', 'Open Sans', 'Helvetica Neue';
     font-size: 80%;
     font-weight: 400;
 } 
+.nav-icons-1{
+    display: flex;
+    justify-content: flex-start;
+}
+.nav-icons-2{
+    display: flex;
+    justify-content: flex-start;
+}
+.icon{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-pages{
+    margin-left: 10px;
+    font-family: 'Poppins', 'Open Sans', 'Helvetica Neue';
+    font-weight: 500;
+}

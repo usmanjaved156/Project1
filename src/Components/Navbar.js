@@ -21,14 +21,14 @@ function Header() {
 
     <Container fluid className='header'>
       <Row>
-        <Col sm={4}>
+        <Col lg={6} md={6} sm={6}>
         <CallOutlinedIcon />
     <label className='lbl-header-1'>+0123456789</label>
         
         <EmailOutlinedIcon />
     <label className='lbl-header-1'>claue@domain.com</label>
     </Col>
-        <Col sm={8}>
+        <Col lg={6} md={6} sm={6}>
 <label className='label'>Summer Sale discount off <span style={{color:'red'}}>50%</span> Shop Now</label>
 
         </Col>
@@ -42,31 +42,36 @@ function Header() {
             <Navbar.Toggle aria-controls="navbarScroll" data-bs-toggle="collapse" data-bs-target="#navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
                 
-      <Nav className='nav-icons-1'>
-        
-      <NavLink href="#home"><FacebookIcon/></NavLink>
-            <NavLink href="#home"><TwitterIcon/></NavLink>
-            <NavLink href="#home"><GoogleIcon/></NavLink>
-            <NavLink href="#home"><InstagramIcon/></NavLink>
-            <NavLink href="#home"><PinterestIcon/></NavLink>
+      <Nav >
+          <div className='nav-icons-1'>
+            <NavLink href="#home" className='icon'><FacebookIcon/></NavLink>
+            <NavLink href="#home" className='icon'><TwitterIcon/></NavLink>
+            <NavLink href="#home" className='icon'><GoogleIcon/></NavLink>
+            <NavLink href="#home" className='icon'><InstagramIcon/></NavLink>
+            <NavLink href="#home" className='icon'><PinterestIcon/></NavLink>
+            </div>
         </Nav>
       </Navbar.Collapse>
         <Navbar.Collapse >
-          <Nav className='nav-pages'>
+          <Nav>
+            <div className='nav-pages'>
             <NavLink href="/Home">Home</NavLink>
             <NavLink href="/Shop">Shop</NavLink>
             <NavLink href="/Products">Products</NavLink>
             <NavLink href="/Pages">Pages</NavLink>
             <NavLink href="/Elements">Elements</NavLink>
             <NavLink href="/Sales">Sales</NavLink>
+            </div>
           </Nav>
         </Navbar.Collapse>
         <Navbar.Collapse >
-      <Nav className='nav-icons-2'>
-            <NavLink href="#home"><SearchIcon/></NavLink>
-            <NavLink href="#home"><AccountCircleOutlinedIcon/></NavLink>
-            <NavLink href="#home"><FavoriteBorderOutlinedIcon/></NavLink>
-            <NavLink href="#home"><AddShoppingCartOutlinedIcon/></NavLink>
+      <Nav>
+      <div className='nav-icons-2'>
+            <NavLink href="#home" className='icon'><SearchIcon/></NavLink>
+            <NavLink href="#home" className='icon'><AccountCircleOutlinedIcon/></NavLink>
+            <NavLink href="#home" className='icon'><FavoriteBorderOutlinedIcon/></NavLink>
+            <NavLink href="#home" className='icon'><AddShoppingCartOutlinedIcon/></NavLink>
+            </div>
         </Nav>
       </Navbar.Collapse>
     </Navbar>  
